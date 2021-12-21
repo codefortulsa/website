@@ -56,8 +56,10 @@ Blog posts should likewise be pushed to the /dev branch for staging.
 - Clone into the /dev branch locally, either using the Github Desktop GUI or the CLI as below.
 ``` git clone -b dev https://github.com/codefortulsa/website.git ```
 - To run tests and view your local edits, navigate into the site's local directory and let Gatsby do the work:
-``` cd */website/
- gatsby develop ```
+``` 
+ cd */website/
+ gatsby develop 
+```
 - All initial contributions should be pushed to the /dev branch for review. Commit messages should follow best practices 
 and highlight additions and edits made within each push. 
 
