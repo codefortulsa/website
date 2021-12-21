@@ -1,4 +1,3 @@
-
 # Code for Tulsa Website
 > Tulsa's Code for America brigade hosts a website and blog [_here_](codefortulsa.org). This is that website's working repository.
 
@@ -94,4 +93,3 @@ Documentation - [Grace Fallon](https://github.com/angelofgrace)
 ## Contact
 Current Volunteer Contact for Website Development: [Erich Keil] <!-- (Link to Email) -->
 General Code for Tulsa Contact: [Carlos Moreno] <!-- (Link to Email -->
-
