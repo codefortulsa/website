@@ -11,6 +11,7 @@ module.exports = {
       twitter: `kylemathews`,
     },
   },
+  pathPrefix: "/website",
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
