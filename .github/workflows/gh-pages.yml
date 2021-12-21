@@ -37,7 +37,7 @@ jobs:
 
       # Builds the gatsby files in public folder
       - name: Gatsby build
-        run: gatsby build
+        run: gatsby build --prefix-paths
 
       # action to push the public folder to gh-pages branch
       # and trigger pages deployment
