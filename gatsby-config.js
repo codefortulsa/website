@@ -16,6 +16,12 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     {
+      resolve: `gatsby-plugin-graphql-codegen`,
+      options: {
+        fileName: `./gatsby-graphql.ts`,
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
