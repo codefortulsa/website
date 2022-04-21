@@ -1,5 +1,5 @@
+import * as React from 'react';
 import { Link } from "gatsby";
-import type React from "react";
 
 type LayoutProps = {
   location: typeof window.location;
