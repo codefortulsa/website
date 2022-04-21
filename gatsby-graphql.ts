@@ -3415,15 +3415,25 @@ export type BioQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type BioQuery = { site?: { siteMetadata?: { author?: { name?: string | null, summary?: string | null } | null, social?: { twitter?: string | null } | null } | null } | null };
 
+export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type Unnamed_1_Query = { site?: { siteMetadata?: { title?: string | null, description?: string | null, social?: { twitter?: string | null } | null } | null } | null };
+
+export type NotFoundQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type NotFoundQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null };
+
 export type BlogIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type BlogIndexQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allMarkdownRemark: { nodes: Array<{ excerpt?: string | null, fields?: { slug?: string | null } | null, frontmatter?: { date?: any | null, title?: string | null, description?: string | null } | null }> } };
 
-export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
+export type Unnamed_2_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type Unnamed_1_Query = { site?: { buildTime?: any | null } | null };
+export type Unnamed_2_Query = { site?: { buildTime?: any | null } | null };
 
 export type GatsbyImageSharpFixedFragment = { base64?: string | null, width: number, height: number, src: string, srcSet: string };
 
