@@ -1,10 +1,16 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react';
+import { Link } from "gatsby";
 
-const Layout = ({ location, title, children }) => {
+type LayoutProps = {
+  location: typeof window.location;
+  title: string;
+}
+
+const Layout: React.FC<LayoutProps> = ({ location, title, children }) => {
+  //@ts-ignore __PATH_PREFIX__ is a Gatsby-specific global not seen by typescript
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
-  let header
+  let header;
 
   if (isRootPath) {
     header = (

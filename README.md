@@ -25,7 +25,7 @@ website will contain a blog, event and contact information, as well as avenues t
 ## Technologies Used
 - GatsbyJS 4 : [Documentation](https://www.gatsbyjs.com/docs)
 - Tailwind CSS : [Documentation](https://tailwindcss.com/docs/installation)
-
+- Typescript __Optional__: [Documentation](https://www.typescriptlang.org/docs/) - [Plugin](https://www.gatsbyjs.com/plugins/gatsby-plugin-typescript) - [GraphQL Query Types](https://www.gatsbyjs.com/plugins/gatsby-plugin-graphql-codegen/)
 
 ## Features
 - Blog (in progress)
@@ -34,12 +34,24 @@ website will contain a blog, event and contact information, as well as avenues t
 
 
 ## Contribute
-	### Developers
+
+### Developers
 Additional features beyond the weblog and static site should be documented and proposed in a new directory pushed to the /dev branch.
 Feature proposals should include the proposed functionality, purpose, a timeline for development, and list any additional Gatsby plugins needed 
 (or external technologies required). It is encouraged that you familiarize yourself with the [Gatsby 4 documentation](https://www.gatsbyjs.com/docs).
 
-	### Designers
+#### **Typescript**
+Using Typescript is optional (though recommended). If you don't want to use typescript, simply create any new files with a `.js` or `.jsx` file extension, and ignore any TypeScript warnings (indicated by `ts(...)` near the end of the warning) in existing `.ts` or `.tsx` files. 
+
+When using TypeScript [please follow these guidelines](https://www.gatsbyjs.com/plugins/gatsby-plugin-graphql-codegen#code-generation). You can refer to the index page as an example. In summary:
+1. Name any GraphQL queries (ensure that query names do not conflict).
+2. Import the type from `gatsby-graphql.ts` as `[QueryName]Query`.
+4. For pages, import the `PageProps` type from `gatsby`, and type the page component as `React.FC<PageProps<[imported query type]>>` (or the Class Component equivilent).
+3. Type components as `React.FC<[imported query type]>`.
+
+__Note:__ It is recommended to seperate type imports from regular imports using the `import type { x } from "y"` syntax.
+
+### Designers
 Designers contributing to static site updates or stand-alone event pages should read the [Design Documentation] <!-- link forthcoming -->.
 Stand-alone pages should be initially pushed as a link to a figma; CSS adjustments and other design contributions can be pushed directly 
 to the relevant /src directories on the /dev branch. Potential contributors should understand the [Tailwind CSS](https://tailwindcss.com/docs/installation) framework and how Gatsby [handles CSS and templating](https://www.gatsbyjs.com/docs/how-to/styling/).
