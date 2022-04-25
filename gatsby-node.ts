@@ -1,40 +1,58 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+import path from "path"
+import { createFilePath } from "gatsby-source-filesystem"
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
+import type { GatsbyNode } from "gatsby"
+import type { MarkdownRemark } from "./gatsby-graphql"
+
+type CreatePages = GatsbyNode["createPages"]
+type OnCreateNode = GatsbyNode["onCreateNode"]
+type CreateSchemaCustomization = GatsbyNode["createSchemaCustomization"]
+
+type CreatePagesQuery = {
+  errors: any[]
+  data: {
+    allMarkdownRemark: {
+      nodes: MarkdownRemark[]
+    }
+  }
+}
+
+export const createPages: CreatePages = async ({
+  graphql,
+  actions,
+  reporter,
+}) => {
   const { createPage } = actions
 
   // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const blogPost = path.resolve(`./src/templates/blog-post.tsx`)
 
   // Get all markdown blog posts sorted by date
-  const result = await graphql(
-    `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
-          nodes {
-            id
-            fields {
-              slug
-            }
+  const query = (await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: ASC }
+        limit: 1000
+      ) {
+        nodes {
+          id
+          fields {
+            slug
           }
         }
       }
-    `
-  )
+    }
+  `)) as CreatePagesQuery
 
-  if (result.errors) {
+  if (query.errors) {
     reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
-      result.errors
+      `There was an error loading the site content`,
+      query.errors
     )
     return
   }
 
-  const posts = result.data.allMarkdownRemark.nodes
+  const posts = query.data.allMarkdownRemark.nodes
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
@@ -58,7 +76,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+export const onCreateNode: OnCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
@@ -72,7 +90,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-exports.createSchemaCustomization = ({ actions }) => {
+export const createSchemaCustomization: CreateSchemaCustomization = ({
+  actions,
+}) => {
   const { createTypes } = actions
 
   // Explicitly define the siteMetadata {} object
