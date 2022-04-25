@@ -7,9 +7,9 @@ import Seo from "../components/seo"
 
 import { BlogIndexQuery } from '../../gatsby-graphql'
 
-type BlogIndexPage = React.FC<PageProps<BlogIndexQuery>>;
+type BlogIndexPageProps = PageProps<BlogIndexQuery>;
 
-const BlogIndex: BlogIndexPage = ({ data, location }) => {
+const BlogIndex = ({ data, location }: BlogIndexPageProps) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const posts = data.allMarkdownRemark.nodes;
 

@@ -4,9 +4,10 @@ import { Link } from "gatsby";
 type LayoutProps = {
   location: typeof window.location;
   title: string;
+  children: React.ReactNode
 }
 
-const Layout: React.FC<LayoutProps> = ({ location, title, children }) => {
+const Layout = ({ location, title, children }: LayoutProps) => {
   //@ts-ignore __PATH_PREFIX__ is a Gatsby-specific global not seen by typescript
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
