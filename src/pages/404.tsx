@@ -4,11 +4,11 @@ import { graphql, PageProps } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import type {NotFoundQuery} from '../../gatsby-graphql'
+import type { NotFoundQuery } from '../../gatsby-graphql'
 
-type NotFoundPage = React.FC<PageProps<NotFoundQuery>>;
+type NotFoundPageProps = PageProps<NotFoundQuery>
 
-const NotFoundPage: NotFoundPage = ({ data, location }) => {
+const NotFoundPage = ({ data, location }: NotFoundPageProps) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (

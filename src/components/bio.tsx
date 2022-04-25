@@ -11,8 +11,8 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import type { BioQuery } from '../../gatsby-graphql'
 
-const Bio: React.FC<BioQuery> = () => {
-  const data = useStaticQuery(graphql`
+const Bio = () => {
+  const data: BioQuery = useStaticQuery(graphql`
     query Bio {
       site {
         siteMetadata {
