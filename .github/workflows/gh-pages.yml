@@ -31,8 +31,8 @@ jobs:
       # Installs the dependencies in the runner
       - name: Install deps
         run: | 
-          yarn install -g gatsby-cli
-          yarn install -g gh-pages
+          yarn global add gatsby-cli
+          yarn global add gh-pages
           yarn install --frozen-lockfile
 
       # Builds the gatsby files in public folder
