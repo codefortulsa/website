@@ -251,6 +251,8 @@ export type Site = Node & {
   host?: Maybe<Scalars['String']>;
   pathPrefix?: Maybe<Scalars['String']>;
   polyfill?: Maybe<Scalars['Boolean']>;
+  jsxRuntime?: Maybe<Scalars['String']>;
+  trailingSlash?: Maybe<Scalars['String']>;
   id: Scalars['ID'];
   parent?: Maybe<Node>;
   children: Array<Node>;
@@ -828,6 +830,8 @@ export type QuerySiteArgs = {
   host?: InputMaybe<StringQueryOperatorInput>;
   pathPrefix?: InputMaybe<StringQueryOperatorInput>;
   polyfill?: InputMaybe<BooleanQueryOperatorInput>;
+  jsxRuntime?: InputMaybe<StringQueryOperatorInput>;
+  trailingSlash?: InputMaybe<StringQueryOperatorInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
   parent?: InputMaybe<NodeFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
@@ -2017,6 +2021,8 @@ export type SiteFieldsEnum =
   | 'host'
   | 'pathPrefix'
   | 'polyfill'
+  | 'jsxRuntime'
+  | 'trailingSlash'
   | 'id'
   | 'parent___id'
   | 'parent___parent___id'
@@ -2152,6 +2158,8 @@ export type SiteFilterInput = {
   host?: InputMaybe<StringQueryOperatorInput>;
   pathPrefix?: InputMaybe<StringQueryOperatorInput>;
   polyfill?: InputMaybe<BooleanQueryOperatorInput>;
+  jsxRuntime?: InputMaybe<StringQueryOperatorInput>;
+  trailingSlash?: InputMaybe<StringQueryOperatorInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
   parent?: InputMaybe<NodeFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
@@ -3410,6 +3418,11 @@ export type ImageSharpSortInput = {
   order?: InputMaybe<Array<InputMaybe<SortOrderEnum>>>;
 };
 
+export type ContentQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type ContentQuery = { allDirectory: { nodes: Array<{ absolutePath: string }> }, allFile: { nodes: Array<{ absolutePath: string, publicURL?: string | null, childMarkdownRemark?: { fileAbsolutePath?: string | null } | null }> } };
+
 export type BioQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3434,6 +3447,15 @@ export type Unnamed_2_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type Unnamed_2_Query = { site?: { buildTime?: any | null } | null };
+
+export type BlogPostBySlugQueryVariables = Exact<{
+  id: Scalars['String'];
+  previousPostId?: InputMaybe<Scalars['String']>;
+  nextPostId?: InputMaybe<Scalars['String']>;
+}>;
+
+
+export type BlogPostBySlugQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, markdownRemark?: { id: string, excerpt?: string | null, html?: string | null, frontmatter?: { title?: string | null, date?: any | null, description?: string | null } | null } | null, previous?: { fields?: { slug?: string | null } | null, frontmatter?: { title?: string | null } | null } | null, next?: { fields?: { slug?: string | null } | null, frontmatter?: { title?: string | null } | null } | null };
 
 export type GatsbyImageSharpFixedFragment = { base64?: string | null, width: number, height: number, src: string, srcSet: string };
 

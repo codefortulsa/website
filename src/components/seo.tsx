@@ -17,7 +17,7 @@ type SeoProps = {
   meta?
 }
 
-const Seo: React.FC<SeoProps> = ({ description, lang, meta, title }) => {
+const Seo = ({ description, lang, meta, title }: SeoProps) => {
   const { site } = useStaticQuery(graphql`
   query {
     site {
