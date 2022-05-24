@@ -2,7 +2,7 @@
 name: Feature Requests and Bug Reports
 about: 'Use this for feature requests and bug reports. Please fill out all relevant
   fields. '
-title: "[BUG]"
+title: "[ISSUE TITLE]"
 labels: ''
 assignees: ''
 
