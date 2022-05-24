@@ -67,6 +67,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean && if test -f ./gatsby-graphql.ts; then rm ./gatsby-graphql.ts; fi",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "lint": "eslint",
+    "test:e2e": "cypress run"
   }
 }

@@ -1,0 +1,29 @@
+name: Deploy to Production
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: akhileshns/heroku-deploy@v3.12.12
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: "cft-website-prod" 
+        heroku_email: "heroku@techlahoma.org"
+  notify:
+    -name: slack channel message
+    id: slack
+    uses: slackapi/slack-github-action@v1.19.0
+    with:
+      payload: |
+      {
+        job:    ${{ github.action }}
+        status: ${{ job.status }}
+      }
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
