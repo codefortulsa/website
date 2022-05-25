@@ -11,13 +11,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: npm install
+      - name: install dependencies
         run: npm install
   
   lint:
     needs: [setup]
-      steps:
-        - run: npm run lint
+    steps:
+      - run: npm run lint
   
   test:
     needs: [setup]
