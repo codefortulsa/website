@@ -8,11 +8,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "lint": "next lint",
-    "test": "yarn cypress run"
+    "test": "cypress run"
   },
   "dependencies": {
+    "cypress": "^9.7.0",
     "js-yaml": "^4.1.0",
     "next": "12.1.6",
     "react": "18.1.0",
@@ -38,31 +39,6 @@
     "postcss": "^8.4.14",
     "postcss-import": "^14.1.0",
     "tailwindcss": "^3.0.24",
-<<<<<<< HEAD
     "typescript": "4.7.2"
-=======
-    "typescript": "^4.6.3",
-    "webpack": "^5.72.0"
-  },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "if test -f ./gatsby-graphql.ts; then rm ./gatsby-graphql.ts; fi && gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean && if test -f ./gatsby-graphql.ts; then rm ./gatsby-graphql.ts; fi",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "lint": "eslint",
-    "test:e2e": "cypress run"
->>>>>>> add first pass cicd workflows
   }
 }
