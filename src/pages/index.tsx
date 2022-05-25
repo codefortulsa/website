@@ -1,93 +1,18 @@
-import * as React from "react"
-import { Link, graphql, PageProps } from "gatsby"
+import HomeLayout from "../features/landing-page/HomeLayout"
+import Link from "next/link"
+import { NextPageWithLayout } from "./_app"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-
-import { BlogIndexQuery } from '../../gatsby-graphql'
-
-type BlogIndexPageProps = PageProps<BlogIndexQuery>;
-
-const BlogIndex = ({ data, location }: BlogIndexPageProps) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
-  const posts = data.allMarkdownRemark.nodes;
-
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
-
+const HomePage: NextPageWithLayout = () => {
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
-      <Bio />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
-    </Layout>
+    <>
+      <h1>TEMP HOME PAGE</h1>
+      <Link href="/blog">
+        <a>GO TO BLOG</a>
+      </Link>
+    </>
   )
 }
 
-export default BlogIndex
+HomePage.getLayout = page => <HomeLayout>{page}</HomeLayout>
 
-export const pageQuery = graphql`
-  query BlogIndex {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-        }
-      }
-    }
-  }
-`
+export default HomePage
