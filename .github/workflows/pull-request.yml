@@ -10,5 +10,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: codefortulsa/website/.github/workflows/lint-and-test/
+    - uses: actions/checkout@v3
+    - name: run lint and test
+      uses: ./.github/workflows/lint-and-test/
