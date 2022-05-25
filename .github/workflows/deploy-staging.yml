@@ -19,11 +19,11 @@ jobs:
     - name: slack channel message
       id: slack
       uses: slackapi/slack-github-action@v1.19.0
-      with:
-        payload: |
-        {
-          job: ${{ github.action }},
-          status: ${{ job.status }}
-        }
+      # with:
+      #   payload: |
+      #   {
+      #     job: ${{ github.action }},
+      #     status: ${{ job.status }}
+      #   }
       env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
