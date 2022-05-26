@@ -2,11 +2,11 @@ name: Deploy to Staging
 
 on: 
   push:
-    branches:
+    branches: 
       - dev
-
+      
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

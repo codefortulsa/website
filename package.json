@@ -8,10 +8,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p $PORT",
+    "lint": "next lint",
+    "test": "cypress run"
   },
   "dependencies": {
+    "cypress": "^9.7.0",
     "js-yaml": "^4.1.0",
     "next": "12.1.6",
     "react": "18.1.0",
