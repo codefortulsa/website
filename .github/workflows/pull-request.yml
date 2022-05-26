@@ -2,14 +2,31 @@ name: Pull Request Testing
 
 on: 
   pull_request:
-    branches: 
-      - dev
-      - main
+    branches: [feature/cicd]
+    types: [opened, synchronize]
 
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: run lint and test
-      uses: ./.github/workflows/lint-and-test/
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: 
+          node-version: '16'
+      run: yarn lint
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: prod build
+        run: yarn build
+
+  e2e tests: 
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      run: yarn test:e2e
