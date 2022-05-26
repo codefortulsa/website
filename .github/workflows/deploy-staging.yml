@@ -2,8 +2,9 @@ name: Deploy to Staging
 
 on: 
   push:
-    branches: [dev]
-
+    branches: 
+      - dev
+      
 jobs:
   deploy:
     runs-on: ubuntu-latest

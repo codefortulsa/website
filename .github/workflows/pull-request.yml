@@ -2,7 +2,8 @@ name: Pull Request Testing
 
 on: 
   pull_request:
-    branches: [feature/cicd]
+    branches: 
+      - 'feature/cicd-test'
     types: [opened, synchronize]
 
 jobs:
