@@ -65,13 +65,13 @@ const getBlogPostsOnce = async () => {
 
   const { noFile, badNames, parseFail, posts } = fs
     //Read the contents of the blog directory
-    .readdirSync(`content/blog`, { withFileTypes: true })
+    .readdirSync(`src/pages/blog`, { withFileTypes: true })
     /* Starting with an object where each property is an empty array, parse each blog.
     If successful, append the result to the `posts` array. Otherwise,
     append the directory name to an appropriate array for each expected error that occurs */
     .reduce(
       (result, node) => {
-        let indexPath = `content/blog/${node.name}/index.md`
+        let indexPath = `src/pages/blog/${node.name}/index.md`
         // skip files at the root of content/blog
         if (!node.isDirectory()) return result
         // append the names of directories that don't have an index.md file to our "no file" array
@@ -165,7 +165,7 @@ const parseBlog = (filepath: string): Omit<BlogPost, "next" | "prev"> => {
     "string" !== typeof frontmatter.title
   ) {
     throw new Error(
-      `Frontmatter for the blog in /blog/${filepath} has missing or invalid fields.`
+      `Frontmatter for the blog at '${filepath}' has missing or invalid fields.`
     )
   }
 
@@ -194,10 +194,10 @@ const parseBlog = (filepath: string): Omit<BlogPost, "next" | "prev"> => {
 
   // Compile and serialize the parsed markdown so it can be passed in the page props
   const markdown = unified()
-    .use(remarkGfm)
-    .use(remarkStringify)
+  .use(remarkGfm)
+  .use(remarkStringify)
     // Overwrite the node's `children` property to exclude the yaml node
-    .stringify({ ...parsed, children: childrenWithoutYaml })
+  .stringify({ ...parsed, children: childrenWithoutYaml })
 
   return {
     author: frontmatter.author,
