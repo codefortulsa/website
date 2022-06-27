@@ -6,7 +6,7 @@ type Props = React.DetailedHTMLProps<
 //TODO: Fix code highlighting and <pre> handling
 const Code = (props: Props) => {
   const { children, ...restProps } = props;
-  return <code {...restProps}>{children}</code>;
+  return <code className="bg-black text-white" {...restProps}>{children}</code>;
 };
 
 export default Code;
