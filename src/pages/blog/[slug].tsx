@@ -6,7 +6,6 @@ import remarkParse from "remark-parse";
 import remarkGfm from "remark-gfm";
 //import rehypeDocument from "rehype-document";
 import rehypeSanitize from "rehype-sanitize";
-import rehypeHighlight from "rehype-highlight";
 import rehypeFormat from "rehype-format";
 
 import SeoHead from "../../features/SeoHead";
@@ -55,7 +54,7 @@ const BlogPage: NextPageWithLayout<BlogPost> = (props) => {
     //@ts-expect-error
     remarkPlugins: [[remarkParse], [remarkGfm]],
     //@ts-expect-error
-    rehypePlugins: [[rehypeSanitize], [rehypeHighlight], [rehypeFormat]],
+    rehypePlugins: [[rehypeSanitize], [rehypeFormat]],
     onError: (error) => {
       throw error;
     },
