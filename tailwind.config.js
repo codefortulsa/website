@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -14,7 +15,7 @@ module.exports = {
       },
     },
   },
-  darkMode: 'media', // or 'class'
+  darkMode: 'media',
   variantOrder: [
     'first',
     'last',
