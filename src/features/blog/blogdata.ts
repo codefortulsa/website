@@ -86,7 +86,7 @@ const getBlogPostsOnce = async () => {
         "Parsing Failure" array with a descriptive message */
         } catch (err) {
           result.parseFail.push(
-            `${node.name} :: ${JSON.stringify(err) || "Unknown Error"}`
+            `${node.name} :: ${JSON.stringify(err || "Unknown Error")}`
           )
         }
         return result
@@ -141,6 +141,7 @@ const getBlogPostsOnce = async () => {
  * @returns an object with metadata properties and the modified markdown for later parsing
  */
 const parseBlog = (filepath: string): Omit<BlogPost, "next" | "prev"> => {
+  console.log(`Parsing ${filepath}`)
   // Read the markdown file as a string
   const fileContents = fs.readFileSync(filepath, { encoding: "utf8" })
   // parse the file contents using plugins to support frontmatter and Github Glavored Markdown
