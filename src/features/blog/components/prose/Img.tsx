@@ -13,7 +13,7 @@ const Img = (props: Props) => {
   const { children, alt, src = "", placeholder, ...restProps } = props
   // Needs placeholder implementation
   return (
-    <Image alt={alt ?? ""} src={src} layout="fill" {...restProps}>
+    <Image alt={alt ?? ""} src={src} layout="fixed" width={"200"} height={"50"} {...restProps}>
       {children}
     </Image>
   )
