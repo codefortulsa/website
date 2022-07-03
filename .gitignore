@@ -34,6 +34,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
+# vscode
+workspace*
 # misc
 gh-md-toc
 CONTRIBUTING.md.toc.*

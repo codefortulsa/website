@@ -1,5 +1,7 @@
 import Image from "next/image";
-import type { ImageProps } from "next/image";
+/**
+ * @see https://github.com/vercel/next.js/discussions/19065#discussioncomment-2341463
+ */
 
 type Props = React.DetailedHTMLProps<
   React.ImgHTMLAttributes<HTMLImageElement>,
@@ -8,13 +10,13 @@ type Props = React.DetailedHTMLProps<
 
 //TODO: Fix blog images
 const Img = (props: Props) => {
-  const { children, alt, ...restProps } = props;
-
+  const { children, alt, src = "", placeholder, ...restProps } = props
+  // Needs placeholder implementation
   return (
-    <img alt={alt ?? ""} {...restProps}>
+    <Image alt={alt ?? ""} src={src} layout="fixed" width={"200"} height={"50"} {...restProps}>
       {children}
-    </img>
-  );
-};
+    </Image>
+  )
+}
 
-export default Img;
+export default Img

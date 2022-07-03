@@ -6,7 +6,6 @@ import remarkParse from "remark-parse";
 import remarkGfm from "remark-gfm";
 //import rehypeDocument from "rehype-document";
 import rehypeSanitize from "rehype-sanitize";
-import rehypeHighlight from "rehype-highlight";
 import rehypeFormat from "rehype-format";
 
 import SeoHead from "../../features/SeoHead";
@@ -50,12 +49,13 @@ export const getStaticProps: GetStaticProps<
 };
 
 const BlogPage: NextPageWithLayout<BlogPost> = (props) => {
+  const { asPath } = useRouter();
   //render the markdown into react components with react-remark
   const rendered = useRemarkSync(props.markdown, {
     //@ts-expect-error
     remarkPlugins: [[remarkParse], [remarkGfm]],
     //@ts-expect-error
-    rehypePlugins: [[rehypeSanitize], [rehypeHighlight], [rehypeFormat]],
+    rehypePlugins: [[rehypeSanitize], [rehypeFormat]],
     onError: (error) => {
       throw error;
     },
@@ -72,7 +72,7 @@ const BlogPage: NextPageWithLayout<BlogPost> = (props) => {
       <SeoHead
         title={props.title}
         description={props.preview}
-        url={`${hostname}${useRouter().route}`}
+        url={`${hostname}${asPath}`}
       />
       <article>
         <address>

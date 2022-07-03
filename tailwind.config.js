@@ -1,12 +1,21 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   plugins: [],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        'cft-red': '#AB3039',
+        'cft-blue': '#133A4E',
+        'cft-black': '#121212',
+        'cft-light-gray': '#BEBCBC',
+        'cft-white': '#F9F9F9',
+      },
+    },
   },
-  darkMode: 'media', // or 'class'
+  darkMode: 'media',
   variantOrder: [
     'first',
     'last',
