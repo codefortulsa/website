@@ -1,4 +1,4 @@
-import HomeLayout from "../features/landing-page/HomeLayout"
+import DefaultLayout from "../features/DefaultLayout"
 import Link from "next/link"
 import { NextPageWithLayout } from "./_app"
 
@@ -13,6 +13,6 @@ const HomePage: NextPageWithLayout = () => {
   )
 }
 
-HomePage.getLayout = page => <HomeLayout>{page}</HomeLayout>
+HomePage.getLayout = page => <DefaultLayout>{page}</DefaultLayout>
 
 export default HomePage

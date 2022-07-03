@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HomeLayout from "../../features/landing-page/HomeLayout";
+import DefaultLayout from "../../features/DefaultLayout";
 import blogPostsSingleton from "../../features/blog/blogdata";
 
 import type { NextPageWithLayout } from "../_app";
@@ -63,6 +63,6 @@ const BlogIndex: NextPageWithLayout<PageProps> = ({ posts }) => {
 };
 
 // Override the default layout
-BlogIndex.getLayout = (page) => <HomeLayout>{page}</HomeLayout>;
+BlogIndex.getLayout = (page) => <DefaultLayout>{page}</DefaultLayout>;
 
 export default BlogIndex;
