@@ -141,7 +141,7 @@ yarn dev
 - Additional Contributors:
 [Isaac Ahlfield](https://github.com/higherkey),
 
-## Support - 
+## Support
 Volunteer Contact for Website Development: 
 - [Erich Keil](mailto:erich@zenlex.dev) <!-- (Link to Email) -->
 Volunteer Contact for all other areas:
