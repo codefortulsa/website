@@ -131,7 +131,7 @@ yarn dev
 
 <!-- ## FAQ - *TO-DO* -->
 
-## Maintainers/Contributors - *TO-DO*
+## Maintainers/Contributors
 - Project Lead - [Erich Keil](https://github.com/zenlex)
 - Content Lead - [Carlos Moreno](https://github.com/chimchim237)
 - Development Lead - [Alec Helmturner](https://github.com/alecvision)
