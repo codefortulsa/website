@@ -4,13 +4,13 @@
 
 <!--TODO: 
     This short description should outline who may contribute and what types of contribution are welcome.
--->We welcome contributions...
+-->We welcome contributions from writers, designers, policymakers, developers, and people just learning to code. Below is a description of the technical details for contributing to the codebase. For contributions in non-technical areas, please reach out to [Brigade Captain, Carlos Moreno](mailto:tulsadesigner@gmail.com) aka @chimchim on the Techlahoma slack. 
 
 <!--TODO: 
-    This long description should summarize the submission process and act as a brief overview of any prerequisites, such as review, discussion, testing, staging, etc. Other important information may be provided here, as well. Long-winded explanations are often best suited for a seperate section.
--->Additional features beyond the weblog and static site should be documented and proposed in a new directory pushed to the /dev branch.
+    This long description should summarize the submission process and act as a brief overview of any prerequisites, such as review, discussion, testing, staging, etc. Other important information may be provided here, as well. Long-winded explanations are often best suited for a separate section.
+-->
 Feature proposals should include the proposed functionality, purpose, a timeline for development, and list any
-additional technologies required.
+additional technologies required. Contact [Project Lead, Erich Keil](mailto:erich@zenlex.dev) aka @zenlex on the Techlahoma slack. 
 
 <!--ts-->
    * [Getting Started <em>TO-DO</em>](#getting-started-to-do)
@@ -37,20 +37,29 @@ additional technologies required.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-- Clone into the /dev branch locally, either using the Github Desktop GUI or the CLI as below.
+- Clone the repo start from the current `dev` branch
 ``` git clone -b dev https://github.com/codefortulsa/website.git ```
-- To run tests and view your local edits, navigate into the site's local directory and let Gatsby do the work:
-``` 
- cd */website/
- gatsby develop 
-```
-- All initial contributions should be pushed to the /dev branch for review. Commit messages should follow best practices 
-and highlight additions and edits made within each push. 
 
+To get started, fork or clone this repo and open it in your editor of choice. For the best developer experience, [VSCode](code.visualstudio.com/download) is recommended, as are the recommended extensions configured for the workspace.
 
-To get started, fork this repo and open it in your editor of choice. For the best developer experience, [VSCode](code.visualstudio.com/download) is recommended, as are the recommended extensions configured for the workspace.
+If you clone the repo and wish to make a contribution, contact our support team (see [readme](./README.md/#support)) to gain write access to the repository. 
 
-First, run the development server:
+## Branch Policies
+- Please push squashed commits with descriptive messages. 
+- Please push to a branch in the format {type}/{what it does}. 
+- Pushing directly to `dev` or `main` is not allowed. 
+
+### Current types for branch names: 
+- feature,
+- bugfix, 
+- content, 
+- housekeeping. 
+
+*So a good branch name would be something like `feature/landing-page` or `bugfix/twitter-widget`. * 
+
+*Whenever possible please link pull requests to issues.* 
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -59,11 +68,6 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Technologies *TO-DO*
-
-**Client:** Next, React, Typescript, TailwindCSS
-**Server:** Next, Node, Express, Unified
 
 - Tailwind CSS : [Documentation](https://tailwindcss.com/docs/installation)
 - Typescript __Optional__: [Documentation](https://www.typescriptlang.org/docs/) - [Plugin](https://www.gatsbyjs.com/plugins/gatsby-plugin-typescript) - [GraphQL Query Types](https://www.gatsbyjs.com/plugins/gatsby-plugin-graphql-codegen/)
@@ -151,11 +155,11 @@ If you encounter unexpected behavior, first try clearing the cache and generated
 **It is highly recommended that you familiarize yourself with the following**:
 
 - [React 17+](https://reactjs.org/docs/getting-started.html#learn-react) (especially [React Hooks](https://reactjs.org/docs/hooks-reference.html))
-- [GraphQL](#graphql)
+- [NextJS](https://nextjs.org/docs/getting-started)
 - [Tailwind CSS](#tailwind)
 - [Typescript](#typescript) (_Optional_)
 
-If you can't install VSCode locally, you can use it in the browser for free with either [vscode.dev](vscode.dev) or [Gitpod](gitpod.io), both of which you can use with your Github account. Gitpod's free tier includes 50hours/month. Unfortunatly, the recommended workspace extensions currently only work in the browser when using Gitpod.
+If you can't install VSCode locally, you can use it in the browser for free with either [vscode.dev](vscode.dev) or [Gitpod](gitpod.io), both of which you can use with your Github account. Gitpod's free tier includes 50hours/month. Unfortunately, the recommended workspace extensions currently only work in the browser when using Gitpod.
 
 ## Usage/Examples
 
@@ -172,7 +176,7 @@ function App() {
 ### Designers
 Designers contributing to static site updates or stand-alone event pages should read the [Design Documentation] <!-- link forthcoming -->.
 Stand-alone pages should be initially pushed as a link to a figma; CSS adjustments and other design contributions can be pushed directly 
-to the relevant /src directories on the /dev branch. Potential contributors should understand the [Tailwind CSS](https://tailwindcss.com/docs/installation) framework.
+to the relevant /src directories on a /style/{descriptor} branch. Potential contributors should understand the [Tailwind CSS](https://tailwindcss.com/docs/installation) framework.
 #### Color Reference
 
 | Color             | Hex                                                                |
@@ -184,18 +188,10 @@ to the relevant /src directories on the /dev branch. Potential contributors shou
 
 
 ### Writers
-Blog post contributors must format their posts using [Markdown](https://ghost.org/changelog/markdown/) and upload them in a folder 
-along with any media included within the blog to the [/content/blog](https://github.com/codefortulsa/website/tree/main/content/blog) directory. 
-Blog posts should likewise be pushed to the /dev branch for staging.
-
-## Room for Improvement
-
-Room for improvement:
- - Modernize Design
- - Create Structured and Sustainable Workflow
-
-To do:
- - Create Figma mock-up
- - Implement new design with Tailwind CSS 
- - Create GitHub Action to automate workflow
- - Launch / *Party*
+- Blog post contributors must format their posts using [Markdown](https://ghost.org/changelog/markdown/).
+- Upload them in a new folder at `src/pages/blog/{folder-name}` on the `content/blog` branch. 
+- Name the markdown file `index.md` and place it in the new folder with any images. 
+- You can do this directly on github - just create a new file at `src/pages/{blog-title}/index.md`
+- [Blog Branch/Folder Direct Link](https://github.com/codefortulsa/website/tree/content/blog/src/pages/blog)
+- The folder's name will become the URL slug so the blog will be published at codefortulsa.org/blog/{folder-name}
+- To publish blog, create a pull request from the `content-blog` branch to the `dev` branch.
