@@ -143,10 +143,10 @@ yarn dev
 
 ## Support
 Volunteer Contact for Website Development: 
-- [Erich Keil](mailto:erich@zenlex.dev) <!-- (Link to Email) -->
+- Project Lead - [Erich Keil](mailto:erich@zenlex.dev) <!-- (Link to Email) -->
 
 Volunteer Contact for all other areas:
-- Code for Tulsa Brigade Captain: [Carlos Moreno](mailto:tulsadesigner@gmail.com) <!-- (Link to Email -->
+- Code for Tulsa Brigade Captain - [Carlos Moreno](mailto:tulsadesigner@gmail.com) <!-- (Link to Email -->
 
 <!-- ## Acknowledgements - *TO-DO*
 We would like to acknowledge the following organizations, projects, and services: -->
