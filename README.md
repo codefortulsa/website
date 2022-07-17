@@ -102,6 +102,28 @@ Install packages & start the dev server:
 yarn install
 yarn dev
 ```
+
+Run e2e and component tests with Cypress locally:
+- Launch app:
+```sh
+yarn build
+yarn start
+OR
+yarn dev
+``` 
+- In separate process:
+run headless in terminal:
+```sh
+yarn test
+```
+run with cypress ui:
+```sh
+yarn cypress:ui
+```
+
+Component tests go in the `cypress/component` directory
+
+End to End tests go in the `cypress/e2e` directory
 <!-- ### Production Build - TODO -->
 
 ## Features
@@ -132,7 +154,7 @@ yarn dev
 
 <!-- ## FAQ - *TO-DO* -->
 
-## Maintainers/Contributors - *TO-DO*
+## Maintainers/Contributors
 - Project Lead - [Erich Keil](https://github.com/zenlex)
 - Content Lead - [Carlos Moreno](https://github.com/chimchim237)
 - Development Lead - [Alec Helmturner](https://github.com/alecvision)
@@ -142,11 +164,12 @@ yarn dev
 - Additional Contributors:
 [Isaac Ahlfield](https://github.com/higherkey),
 
-## Support - 
+## Support
 Volunteer Contact for Website Development: 
-- [Erich Keil](mailto:erich@zenlex.dev) <!-- (Link to Email) -->
+- Project Lead - [Erich Keil](mailto:erich@zenlex.dev) <!-- (Link to Email) -->
+
 Volunteer Contact for all other areas:
-- Code for Tulsa Brigade Captain: [Carlos Moreno](mailto:tulsadesigner@gmail.com) <!-- (Link to Email -->
+- Code for Tulsa Brigade Captain - [Carlos Moreno](mailto:tulsadesigner@gmail.com) <!-- (Link to Email -->
 
 <!-- ## Acknowledgements - *TO-DO*
 We would like to acknowledge the following organizations, projects, and services: -->
