@@ -3,3 +3,5 @@ describe('ComponentName.cy.ts', () => {
     // cy.mount()
   })
 })
+
+export {} //temporary TS workaround for --isolatedModules
