@@ -27,11 +27,11 @@ jobs:
   tests: 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: cypress
+        uses: cypress-io/github-action@v4
         with:
-          node-version: '16'
-      - run: yarn install
-      - run: yarn dev
-      - run: yarn test
+          build: npm run build
+          start: npm start
       
