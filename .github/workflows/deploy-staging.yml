@@ -17,7 +17,7 @@ jobs:
           heroku_email: "heroku@techlahoma.org"
 
       - name: Send notification to Slack Channel
-        id: slack
+        id: Deploy dev branch to staging
         uses: slackapi/slack-github-action@v1.19.0
         with:
           # This data can be any valid JSON from a previous step in the GitHub Action

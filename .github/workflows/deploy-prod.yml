@@ -17,7 +17,7 @@ jobs:
           heroku_email: "heroku@techlahoma.org"
 
       - name: Send notification to Slack Channel
-        id: slack
+        id: Deploy main branch to production
         uses: slackapi/slack-github-action@v1.19.0
         with:
           payload: |
