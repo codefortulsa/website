@@ -2,8 +2,6 @@ name: Pull Request Testing
 
 on: 
   pull_request:
-    branches: 
-      - 'feature/cicd-test'
     types: [opened, synchronize]
 
 jobs:
@@ -25,7 +23,7 @@ jobs:
           node-version: '16'
       - run: yarn build
 
-  e2e tests: 
+  tests: 
     runs-on: ubuntu-latest
     needs: [build]
     steps:
