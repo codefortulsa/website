@@ -4,6 +4,7 @@
 ![Code For Tulsa Logotype](https://raw.githubusercontent.com/codefortulsa/website/main/content/asset/cft%20full%20name(cropped).png)
 
 [![site status](https://img.shields.io/website?logo=heroku&url=https%3A%2F%2Fcodefortulsa.org&style=plastic)](https://codefortulsa.org)
+[![Deploy to Staging](https://github.com/codefortulsa/website/actions/workflows/deploy-staging.yml/badge.svg?branch=dev)](https://github.com/codefortulsa/website/actions/workflows/deploy-staging.yml)
 [![version](https://img.shields.io/github/package-json/v/codefortulsa/website?logo=semver&style=plastic)](https://semver.org/)
 [![license](https://img.shields.io/github/license/codefortulsa/website?logo=open-source-initiative&color=%233da639&style=plastic)](https://choosealicense.com/licenses/)<br>
 [![contributor count](https://img.shields.io/github/contributors/codefortulsa/website?color=blue&logo=github&style=flat-square)](https://github.com/codefortulsa/website/graphs/contributors)
