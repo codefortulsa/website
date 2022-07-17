@@ -22,8 +22,8 @@ jobs:
         with:
           payload: |
             {
-              job:    ${{ github.action }}
-              status: ${{ job.status }}
+              "job":    ${{ github.action }}
+              "status": ${{ job.status }}
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
