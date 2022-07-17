@@ -1,8 +1,9 @@
 name: Pull Request Testing
 
-on: 
-  pull_request:
-    types: [opened, synchronize]
+    
+on: workflow_dispatch
+  # pull_request:
+  #   types: [opened, synchronize]
 
 jobs:
   lint:
