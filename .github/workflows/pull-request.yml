@@ -24,12 +24,14 @@ jobs:
           node-version: '16'
       - run: yarn install && yarn build
 
-  # tests: 
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - uses: actions/setup-node@v3
-  #       with:
-  #         node-version: '16'
-  #     - run: yarn install && yarn test
+  tests: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: cypress
+        uses: cypress-io/github-action@v4
+        with:
+          build: npm run build
+          start: npm start -p 3000
       
