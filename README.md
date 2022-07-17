@@ -120,6 +120,10 @@ run with cypress ui:
 ```sh
 yarn cypress:ui
 ```
+
+Component tests go in the `cypress/component` directory
+
+End to End tests go in the `cypress/e2e` directory
 <!-- ### Production Build - TODO -->
 
 ## Features
