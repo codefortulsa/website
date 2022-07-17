@@ -102,6 +102,24 @@ Install packages & start the dev server:
 yarn install
 yarn dev
 ```
+
+Run e2e and component tests with Cypress locally:
+- Launch app:
+```sh
+yarn build
+yarn start
+OR
+yarn dev
+``` 
+- In separate process:
+run headless in terminal:
+```sh
+yarn test
+```
+run with cypress ui:
+```sh
+yarn cypress:ui
+```
 <!-- ### Production Build - TODO -->
 
 ## Features
