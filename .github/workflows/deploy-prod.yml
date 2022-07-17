@@ -22,7 +22,7 @@ jobs:
         with:
           payload: |
             {
-              "job":    "${{ github.action }}"
+              "job":    "${{ github.action }}",
               "status": "${{ job.status }}"
             }
         env:

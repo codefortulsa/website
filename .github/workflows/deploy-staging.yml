@@ -23,7 +23,7 @@ jobs:
           # This data can be any valid JSON from a previous step in the GitHub Action
           payload: |
             {
-              "job":    "${{ github.action }}"
+              "job":    "${{ github.action }}",
               "status": "${{ job.status }}"
             }
         env:
