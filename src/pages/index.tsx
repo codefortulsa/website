@@ -21,7 +21,7 @@ const HomePage: NextPageWithLayout = () => {
       </p>
       <br/>
       <p>
-        We’re now also a part of the larger Techlahoma organization, a professional network of almost 5,000 information technology workers, hobbyists, students, teachers, and future technologists. Volunteers have created 15 user groups and 3 conferences that train on the latest skills needed to obtain employment and succeed in today's increasingly tech-focused workforce. We teach and discuss topics ranging from design, coding, data science, hardware, mobile apps, and much more.
+        We’re now also a part of the larger Techlahoma organization, a professional network of almost 5,000 information technology workers, hobbyists, students, teachers, and future technologists. Volunteers have created 15 user groups and 3 conferences that train on the latest skills needed to obtain employment and succeed in today’s increasingly tech-focused workforce. We teach and discuss topics ranging from design, coding, data science, hardware, mobile apps, and much more.
       </p>
       <Link href="/blog">
         <a>GO TO BLOG</a>
