@@ -1,0 +1,22 @@
+---
+title: "Partnership with Smart Growth Tulsa"
+date: "2014-08-01"
+categories: 
+  - "code-for-tulsa-blog"
+tags: 
+  - "city-planning"
+  - "public-policy"
+  - "smart-growth"
+  - "tulsa-comprehensive-plan"
+  - "tulsanow"
+---
+
+Code for Tulsa has been working hard this year on building relationships: both with departments in City Hall, and with other civic-minded groups that have an interest in making Tulsa better.  We're very happy to announce that Code for Tulsa has become a member organization of [Smart Growth Tulsa](http://smartgrowthtulsa.com/about/smart-growth-tulsa/ "Smart Growth Tulsa Coalition"), a coalition that is working for the city to embrace intelligent land-use and transportation policy. As stated on their website:
+
+> Smart Growth is about efficiency. It’s about making our cities more livable, sustainable and economically viable.
+
+Those are ideas we can get behind.  What does public policy have to do with civic tech?  We think that the two go hand in hand:  Civic tech has a role in making local government more accessible, in every sense of the word.  Government works best when citizens are actively engaged in determining their own future -- with the best data, and the best tools for collaboration.  In the book [Beyond Transparency](http://beyondtransparency.org/), you can read about some examples of how these two worlds fit very nicely together.
+
+> It’s at the local level that government most directly impacts the lives of residents—providing clean parks, fighting crime, or issuing permits to open a new business. This is where there is the biggest opportunity to use open data to reimagine the relationship between citizens and government.
+
+We look forward to taking our ideas further, and working more closely with organizations that are moving the city forward to better citizen engagement and a better future for Tulsa.

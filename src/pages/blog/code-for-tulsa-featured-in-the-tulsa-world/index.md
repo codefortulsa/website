@@ -1,0 +1,19 @@
+---
+title: "Code for Tulsa featured in the Tulsa World"
+date: "2014-09-15"
+categories: 
+  - "code-for-tulsa-blog"
+coverImage: "540e8e509f4ab-image.jpg"
+---
+
+We're not sure if the timing was intentional or not, but Jarrel Wade of the Tulsa World includes some great information about Code for Tulsa, in his piece "**Technology used to attract new Tulsans**" just as we're getting ready to head to the Code for America Summit in San Francisco.
+
+> Code for Tulsa, an official brigade of Code for America, is making a name for Tulsa in computer programming circles around the nation. The group uses open data from the city — public records in programmer format that is now offered freely on the city of Tulsa’s website — combined with other data sources to create apps.
+> 
+> The apps are designed to engage residents in government, while also providing city services that otherwise wouldn’t be available.
+> 
+> Some app ideas that are now available for design include something as simple as mapping walking trails across Tulsa or notifying residents when any planning change is made to their neighborhood.
+> 
+> Code for Tulsa got its foot in City Hall’s door with the help of Councilor G.T. Bynum.
+
+Wade interviews our Storyteller Carlos Moreno, as part of the World's series entitled, "Livable Tulsa." Read the whole article [here](http://www.tulsaworld.com/homepage2/livable-tulsa-technology-used-to-attract-new-tulsans/article_6e734cb7-f6df-51ba-9f90-ccab15d11c80.html "Livable Tulsa").
