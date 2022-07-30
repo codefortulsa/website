@@ -11,7 +11,7 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
       <header className="col-span-1">
         <Nav />
       </header>
-      <main className="col-span-3 pt-10">
+      <main className="col-span-3 pt-10 container px-20">
         {children}
         <footer className="absolute bottom-0 pb-4">
           © {new Date().getFullYear()}
