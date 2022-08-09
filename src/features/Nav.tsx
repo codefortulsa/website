@@ -1,4 +1,4 @@
-import sticker from "/content/asset/cff sticker design@2x.png"
+import sticker from "/public/asset/cff sticker design@2x.png"
 import Image from "next/image"
 import Link from "next/link";
 
