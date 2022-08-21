@@ -4,9 +4,9 @@ import type { NextPageWithLayout } from "../_app";
 import type { GetStaticProps } from "next";
 
 const testEvents: CFTEvent[] = [
-	{ title: 'test event', description: 'foo, bar, and baz go to vegas', date: new Date().toDateString() },
-	{ title: 'test event2', description: 'foo, bar, and baz go to vegas part 2: the reckoning', date: new Date().toDateString() },
-	{ title: 'test event3', description: 'foo, bar, and baz go to vegas part 3: the reunion tour', date: new Date().toDateString() }
+	{ title: 'test event', description: 'foo, bar, and baz go to vegas', date: new Date().toDateString(), location: 'Golden Nugget' },
+	{ title: 'test event2', description: 'foo, bar, and baz go to vegas part 2: the reckoning', date: new Date().toDateString(), location: 'Circus Circus' },
+	{ title: 'test event3', description: 'foo, bar, and baz go to vegas part 3: the reunion tour', date: new Date().toDateString(), location: 'The Bellagio' }
 ]
 
 type PageProps = {
