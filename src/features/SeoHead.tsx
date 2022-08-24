@@ -1,15 +1,16 @@
-import Head from "next/head";
+import Head from 'next/head';
 
 type Props = {
-    title: string;
-    description: string;
-    url: string;
-    children?: React.ReactNode;
-}
+  title: string;
+  description: string;
+  url: string;
+  children?: React.ReactNode;
+};
 
 const SeoHead = ({title, description, url, children}: Props) => {
   return (
     <Head>
+      <link rel="shortcut icon" href="/favicon.ico" />
       <meta name="description" key="description" content={description} />
       <meta property="og:title" key="og:title" content={title} />
       <meta property="og:url" key="og:url" content={url} />
