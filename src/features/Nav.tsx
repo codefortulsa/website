@@ -20,9 +20,11 @@ export default function Nav() {
                 </p>
               </li>
             </Link>
-            <li className="w-full font-extrabold text-cft-white hover:text-gray-500 cursor-pointer py-2 bg-cft-red">
-              <p className="text-sm text-center">join us</p>
-            </li>
+            <Link href={'/connections'}>
+              <li className="w-full font-extrabold text-cft-white hover:text-gray-500 cursor-pointer py-2 bg-cft-red">
+                <p className="text-sm text-center">join us</p>
+              </li>
+            </Link>
             <Link href={'/events'}>
               <li className="w-full font-extrabold text-cft-black hover:text-gray-500 cursor-pointer py-2 bg-cft-white">
                 <p className="text-sm text-center">
