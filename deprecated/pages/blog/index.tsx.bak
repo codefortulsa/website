@@ -1,10 +1,10 @@
 import Link from "next/link";
 import DefaultLayout from "../../../src/features/DefaultLayout";
-import blogPostsSingleton from "../../features/blog/blogdata";
+import blogPostsSingleton from "../../features/blog/blogdata.ts.bak";
 
 import type { NextPageWithLayout } from "../../../src/pages/_app";
 import type { GetStaticProps } from "next";
-import type { BlogPost } from "../../features/blog/blogdata";
+import type { BlogPost } from "../../features/blog/blogdata.ts.bak";
 
 type PageProps = {
   posts: Array<BlogPost & { slug: string }>;
