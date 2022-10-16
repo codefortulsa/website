@@ -1,8 +1,8 @@
 import Link from "next/link";
-import DefaultLayout from "../../features/DefaultLayout";
+import DefaultLayout from "../../../src/features/DefaultLayout";
 import blogPostsSingleton from "../../features/blog/blogdata";
 
-import type { NextPageWithLayout } from "../_app";
+import type { NextPageWithLayout } from "../../../src/pages/_app";
 import type { GetStaticProps } from "next";
 import type { BlogPost } from "../../features/blog/blogdata";
 

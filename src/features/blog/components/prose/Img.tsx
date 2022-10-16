@@ -1,19 +1,20 @@
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 /**
+ * This relies on the recma-next-static-images plugin in `next.config.js`, since static images break next/image
  * @see https://github.com/vercel/next.js/discussions/19065#discussioncomment-2341463
  */
-
-type Props = React.DetailedHTMLProps<
-  React.ImgHTMLAttributes<HTMLImageElement>,
-  HTMLImageElement
->;
-
-//TODO: Fix blog images
-const Img = (props: Props) => {
-  const { children, alt, src = "", placeholder, ...restProps } = props
-  // Needs placeholder implementation
+const Img = (props: ImageProps) => {
+  const { children, alt, src, title, ...restProps } = props;
+  if (typeof src !== "string") {
+    return (
+      //@ts-ignore
+      <Image {...restProps} alt={alt ?? title ?? ""} title={title ?? alt ?? ""} {...src}>
+        {children}
+      </Image>
+    )  
+  }
   return (
-    <Image alt={alt ?? ""} src={src} layout="fixed" width={"200"} height={"50"} {...restProps}>
+    <Image  {...restProps} alt={alt ?? ""} title={title ?? ""} src={src}>
       {children}
     </Image>
   )

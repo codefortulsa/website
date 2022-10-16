@@ -14,18 +14,25 @@
     "test": "cypress run"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0",
+    "@mdx-js/loader": "^2.1.5",
+    "@mdx-js/react": "^2.1.5",
+    "@next/mdx": "^12.3.1",
     "next": "^12.1.6",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-remark": "^2.1.0",
+    "recma-next-static-images": "helmturner/recma-next-static-images",
     "rehype-format": "^4.0.1",
     "rehype-sanitize": "^5.0.1",
     "remark-frontmatter": "^4.0.1",
     "remark-gfm": "^3.0.1",
+    "remark-morematter": "helmturner/remark-morematter",
     "remark-parse": "^10.0.1",
     "remark-stringify": "^10.0.2",
-    "unified": "^10.1.2"
+    "remark-validate-vfile": "helmturner/remark-validate-vfile",
+    "unified": "^10.1.2",
+    "yaml": "^2.1.3",
+    "zod": "^3.19.1"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.5",
