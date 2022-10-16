@@ -33,6 +33,7 @@ function MyApp({Component, pageProps}: AppPropsWithLayout) {
       : Component.getLayout;
 
   return getLayout(
+    //@ts-ignore
     <MDXProvider components={components}>
       <Component {...pageProps} />
     </MDXProvider>
