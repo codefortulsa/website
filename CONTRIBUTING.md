@@ -91,7 +91,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 **[Full Documentation](https://tailwindcss.com)**
 
-If you're unfamiliar with Tailwind CSS, you'll want to brush up on the [Core Concenpts](https://tailwindcss.com/docs/utility-first).
+If you're unfamiliar with Tailwind CSS, you'll want to brush up on the [Core Concepts](https://tailwindcss.com/docs/utility-first).
 
 It's recommended that developers stick with the idiomatic approach of preferring in-line utility classes. The recommended vscode extensions in this workspace enable code hinting for the predefined classes.
 

@@ -25,7 +25,7 @@
 
 ---
 
-Code For Tulsa, an official brigade of Code For America, hosts a website and blog at [codefortulsa.org](codefortulsa.org).  This is that website's working repository.
+Code For Tulsa, an official brigade of Code For America, hosts a website and blog at [codefortulsa.org](https://codefortulsa.org).  This is that website's working repository.
 
 The Code for Tulsa website aims to be a beacon for engagement in civic tech volunteer opportunities within the greater Tulsa area.
 
@@ -45,13 +45,13 @@ The Code for Tulsa website aims to be a beacon for engagement in civic tech volu
       * [Local Development](#local-development)
       <!-- * [Production Build - TODO](#production-build---todo) -->
    * [Features](#features)
-   * [Known Issues / Limitations](#known-issues--limitations)
+   * [Known Issues &#47; Limitations](#known-issues--limitations)
       * [Site](#site)
       * [Blog](#blog)
       * [SEO](#seo)
    <!-- * [Screenshots - <em>TO-DO</em>](#screenshots---to-do) -->
    <!-- * [FAQ - <em>TO-DO</em>](#faq---to-do) -->
-   * [Maintainers](#maintainers)
+   * [Maintainers &#47; Contributors](#maintainers--contributors)
    * [Support](#support)
    <!-- * [Acknowledgements - <em>TO-DO</em>](#acknowledgements---to-do) -->
    * [Leadership](#leadership)
@@ -154,7 +154,7 @@ End to End tests go in the `cypress/e2e` directory
 
 <!-- ## FAQ - *TO-DO* -->
 
-## Maintainers/Contributors
+## Maintainers / Contributors
 - Project Lead - [Erich Keil](https://github.com/zenlex)
 - Content Lead - [Carlos Moreno](https://github.com/chimchim237)
 - Development Lead - [Alec Helmturner](https://github.com/alecvision)
