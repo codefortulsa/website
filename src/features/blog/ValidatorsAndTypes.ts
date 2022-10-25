@@ -1,8 +1,7 @@
-import { Assertion } from 'remark-validate-vfile';
 import { z } from 'zod';
 
-export type FrontmatterInput = z.input<typeof FrontmatterSchema>;
-export type FrontmatterOutput = z.output<typeof FrontmatterSchema>
+export type Frontmatter = z.input<typeof FrontmatterSchema>;
+export type ParsedFrontmatter = z.output<typeof FrontmatterSchema>;
 export type BlogPost = z.infer<typeof BlogPostSchema>;
 
 export const FrontmatterSchema = z.object({
@@ -41,6 +40,7 @@ export const FrontmatterSchema = z.object({
  * @property {(string | null)} next - The slug for the next post (by date). Null for the latest post.
  * @property {(string | null)} prev - The slug for the previous post (by date). Null for the earliest post.
  */
+
 export const BlogPostSchema = FrontmatterSchema.merge(
   z.object({
     date: z.string(),
@@ -52,16 +52,3 @@ export const BlogPostSchema = FrontmatterSchema.merge(
     prev: z.string().nullish(),
   })
 );
-
-export const slugIsValid: Assertion = file => {
-  const own = {}.hasOwnProperty;
-  if (!own.call(file.data, 'slug')) {
-    throw new Error('Missing slug');
-  }
-  if (typeof file.data.slug !== 'string') {
-    throw new Error('Slug must be a string');
-  }
-  if (/[^A-Za-z0-9\-]/g.test(file.data.slug)) {
-    throw new Error('Slug must only contain letters, numbers, and dashes');
-  }
-};

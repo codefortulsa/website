@@ -1,7 +1,5 @@
-//const { default: remarkValidateVfile, default: remarkValidateVFile } = require('remark-validate-vfile');
 //const { default: remarkMorematter } = require('remark-morematter');
-//const { default: yaml } = require('yaml');
-//const { FrontmatterSchema, slugIsValid } = require('./src/features/blog/ValidatorsAndTypes');
+//const { FrontmatterSchema } = require('./src/features/blog/ValidatorsAndTypes');
 
 ///** @type {import('remark-morematter').Options} */
 //const remarkMorematterConfig = {
@@ -12,12 +10,6 @@
 //      validator: FrontmatterSchema.parse,
 //    },
 //  },
-//}
-//
-///** @type {import('remark-validate-vfile').Options} */
-//const remarkValidateVFileConfig = {
-//  assertions: slugIsValid,
-//  failOnError: false
 //}
 
 /**
@@ -43,7 +35,7 @@ const nextConfigAsync = async () => {
   const recmaStaticImages = (await import('recma-next-static-images')).default;
   const recmaStaticImagesConfig =
     /** @type {import('recma-next-static-images').Options} */ ({
-      cacheDirectory: './public/__generated',
+      cacheDirectory: './__generated',
     });
 
   const configureMDX = (await import('@next/mdx')).default;
