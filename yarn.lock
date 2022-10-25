@@ -3555,7 +3555,7 @@ readdirp@~3.6.0:
 
 recma-next-static-images@helmturner/recma-next-static-images:
   version "0.1.0"
-  resolved "https://codeload.github.com/helmturner/recma-next-static-images/tar.gz/52a9508712fc219408ec384268d46307899df9d9"
+  resolved "https://codeload.github.com/helmturner/recma-next-static-images/tar.gz/fddbd3cc2285148acc2f985e2c76d48445c2c144"
   dependencies:
     estree-util-visit "^1.2.0"
     node-fetch "^3.2.10"
@@ -3699,10 +3699,6 @@ remark-stringify@^10.0.2:
     "@types/mdast" "^3.0.0"
     mdast-util-to-markdown "^1.0.0"
     unified "^10.0.0"
-
-remark-validate-vfile@helmturner/remark-validate-vfile:
-  version "1.0.0"
-  resolved "https://codeload.github.com/helmturner/remark-validate-vfile/tar.gz/49df1c387c8bac1a25c70eec53825fcf987d34b2"
 
 request-progress@^3.0.0:
   version "3.0.0"

@@ -29,7 +29,6 @@
     "remark-morematter": "helmturner/remark-morematter",
     "remark-parse": "^10.0.1",
     "remark-stringify": "^10.0.2",
-    "remark-validate-vfile": "helmturner/remark-validate-vfile",
     "unified": "^10.1.2",
     "yaml": "^2.1.3",
     "zod": "^3.19.1"
