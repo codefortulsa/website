@@ -3554,8 +3554,8 @@ readdirp@~3.6.0:
     picomatch "^2.2.1"
 
 recma-next-static-images@helmturner/recma-next-static-images:
-  version "0.1.0"
-  resolved "https://codeload.github.com/helmturner/recma-next-static-images/tar.gz/fddbd3cc2285148acc2f985e2c76d48445c2c144"
+  version "1.0.0"
+  resolved "https://codeload.github.com/helmturner/recma-next-static-images/tar.gz/8b7bda88be573e1a5f9309c492f6933121368f97"
   dependencies:
     estree-util-visit "^1.2.0"
     node-fetch "^3.2.10"
