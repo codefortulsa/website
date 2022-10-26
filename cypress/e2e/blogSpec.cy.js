@@ -19,4 +19,4 @@ describe('Blogs', () => {
     cy.get('a').contains('previous post', { matchCase: false }).click();
     cy.get('main');
   });
-});
+}).skip()
