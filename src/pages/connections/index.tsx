@@ -34,13 +34,10 @@ const ConnectionsPage: NextPageWithLayout = () => {
 	return (
 		<>
 			{links.map(
-				({ url, icon, label }, index) => (
+				(linkProps, index) => (
 					<IconLink
 						key={index}
-						url={url}
-						icon={icon}
-						label={label}
-						reverse={index % 2 == 0}
+						{...linkProps}
 					/>
 				))}
 		</>
