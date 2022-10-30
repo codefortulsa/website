@@ -5,8 +5,9 @@ import twitterLogo from "/public/icons/TwitterLogo.svg"
 import DefaultLayout from "../../features/DefaultLayout"
 import { NextPageWithLayout } from "../_app"
 import IconLink from "../../features/connections/components/IconLink"
+import { IconLinkProps } from "../../features/connections/components/IconLink"
 
-const links = [
+const links: IconLinkProps[] = [
 	{
 		url: "https://slack.techlahoma.org/",
 		icon: slackLogo,
