@@ -1,13 +1,13 @@
 import Image from "next/image"
 
-type Props = {
+export type IconLinkProps = {
 	url: string,
 	icon: string,
 	label: string,
 	reverse?: boolean
 }
 
-const IconLink = ({ url, icon, label, reverse = false }: Props) => {
+const IconLink = ({ url, icon, label, reverse = false }: IconLinkProps) => {
 	const rowReverse = reverse ? ' xs:flex-row-reverse' : '';
 
 	return (
