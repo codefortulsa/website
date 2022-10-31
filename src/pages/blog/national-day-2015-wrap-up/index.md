@@ -35,7 +35,7 @@ The main event of the day ended up being completely unexpected. We received a su
 
 2\. We've come up with an idea to create a nutrient pollution measurement kit. Inspired by the [open water project](https://github.com/openwaterproject), we'd like to create some sort of tool that is able to measure levels of nitrogen and phosphorus.
 
-![2015-06-06 10.27.17](https://codefortulsa.files.wordpress.com/2015/06/2015-06-06-10-27-17.jpg?w=660)
+![2015-06-06 10.27.17](./images/2015-06-06-10-27-17.jpg)
 
 Patrick worked on [twittering birds](https://github.com/destos/birdo). Should be interesting to see if this gains any traction in Tulsa. There are certainly a good number of nature enthusiasts and birdwatchers in town.
 

@@ -7,7 +7,7 @@ tags:
   - "hackforchange"
 ---
 
-![](images/logo.png)
+<!-- ![](images/logo.png) -->
 
 We had an awesome weekend of civic hacking! From 9am to 6pm on Saturday, we saw over 70 people between our [TulsaWiki](http://www.tulsawiki.org/) Editathon, our Code for Tulsa Brigade Meetup, and our Guthrie Green Hackathon. While we wait for [the national org](http://www.hackforchange.org/) to compile all the surveys and project submissions, here's a quick report on our Tulsa activities.
 

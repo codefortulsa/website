@@ -7,7 +7,7 @@ categories:
 
 One of the benefits of working with the Tulsa City-County Library is that they have awesome graphic artists on staff, who create promotional materials for hundreds of events a year.  They have put together a beautiful poster and flyer for the National Day of Civic Hacking, highlighting the three events planned for the day:
 
-[![National Day of Civic Hacking flyer](http://codefortulsa.files.wordpress.com/2013/04/ndoch_flyer.png?w=193)](http://codefortulsa.files.wordpress.com/2013/04/rc_national-day-of-civic-hacking-hlf-sheet-flyr_13.pdf)
+[![National Day of Civic Hacking flyer](http://codefortulsa.files.wordpress.com/2013/04/ndoch_flyer.png)](http://codefortulsa.files.wordpress.com/2013/04/rc_national-day-of-civic-hacking-hlf-sheet-flyr_13.pdf)
 
 From the poster:
 

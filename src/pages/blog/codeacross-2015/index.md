@@ -12,10 +12,10 @@ tags:
   - "okdhs"
   - "snap"
   - "taylor-hanson"
-coverImage: "what-are-you-working-on.jpg"
+# coverImage: "what-are-you-working-on.jpg"
 ---
 
-![](images/CodeAcross2015_Postcard-550x367.jpg)
+![](./images/CodeAcross2015_Postcard-550x367.jpg)
 
 This weekend Code for Tulsa hosted one of 60 CodeAcross events (#codeacross) around the globe. At the Flyloft in Tulsa’s Brady Arts District, Code for Tulsa members worked on five tech initiatives for the community of Tulsa.
 
@@ -57,7 +57,7 @@ It is even possible, depending on how the technology is used, for one hybrid car
 
 The Power Brigade was introduced in Red Hook Brooklyn last year to great response from that community, one of the most heavily damaged during Hurricane Sandy. This weekend the Brigade is developing software that can help locate hybrid cars and other sources in the wake of a disaster.
 
-![](http://image.slidesharecdn.com/thedigitaltransformationoftransportation-150117104346-conversion-gate01/95/the-digital-transformation-of-transportation-v-12-80-638.jpg?cb=1423439444)
+![](http://image.slidesharecdn.com/thedigitaltransformationoftransportation-150117104346-conversion-gate01/95/the-digital-transformation-of-transportation-v-12-80-638.jpg)
 
 ## Open Data Census
 
