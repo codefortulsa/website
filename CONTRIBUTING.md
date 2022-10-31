@@ -168,8 +168,8 @@ const processor = unified()
 
 With the `@mdx-js/loader` configured, you can import `.md` and `.mdx` files as React components. For example the following MDX:
 
-```md
-// content/hello.mdx
+```mdx
+<!--content/hello.mdx-->
 import { Button } from 'components/Button'
 
 # Hello, World!
