@@ -21,7 +21,7 @@ This weekend Code for Tulsa hosted one of 60 CodeAcross events (#codeacross) aro
 
 Inspired by a talk from Jacob Solomon at last year’s Code for America national summit, Code for Tulsa leapt at the opportunity to help make Tulsa a more empathetic city for its citizens and, ultimately, a more welcoming, friendly and empowering place to live. CodeAcross projects address disaster preparedness, Tulsa’s food deserts, the SNAP program and accessibility to city information.
 
-![](images/rra-snap-card.jpg)
+<!-- ![](images/rra-snap-card.jpg) -->
 
 ## Oh, SNAP!
 
@@ -33,7 +33,7 @@ Also, an app is under development which will help potential clients of SNAP dete
 
 This new app will help people know with more certainty if they are likely to be eligible for benefits. This will help them feel more comfortable about navigating the murky waters of the official application.
 
-![](images/1409046876.png)
+<!-- ![](images/1409046876.png) -->
 
 ## Food On The Move
 
@@ -41,7 +41,7 @@ Taylor Hanson attended the event as well, spearheading an effort aimed at reliev
 
 Hanson is empowering a community-driven effort to bring food to the people of these food deserts. Using the tech developed at CodeAcross, Hanson’s “Food on the Move” initiative will be able to track health habits of the people they reach. They’ll know who they’re reaching, when and where. With the data accumulated by the new app, Food on the Move will be able to refine and focus its efforts. Over time, the assistance and community building Food on the Move provides will become more efficient and effective.
 
-[![citizen power brigade](images/citizen-power-brigade-300x200.jpg)](http://coffeeandtequila.com/wp-content/uploads/2015/02/citizen-power-brigade.jpg)
+<!-- [![citizen power brigade](images/citizen-power-brigade-300x200.jpg)](http://coffeeandtequila.com/wp-content/uploads/2015/02/citizen-power-brigade.jpg) -->
 
 ## Citizen Power Brigade
 
@@ -68,8 +68,8 @@ Two issues arise. One the one hand, the question is “Can you find the info?”
 Michael Dellinger, Chief Information Officer of the City of Tulsa, met with Code for Tulsa, encouraging the group to find out how the city can improve the usability of its data. During CodeAcross 2015, members scoured the City of Tulsa web presence to find out exactly what information is shared, how exactly it is shared and creating methods to make the data more useful to developers and citizens in general.
 
 Alongside the Open Data Census is the Digital Service Census, which measures how easily a person using a city website can accomplish various common tasks, like applying for a job or getting a license to start a new business. Again, Code Across 2015 participants accumulated info on how easily these tasks could be done. A report on the user-friendliness of Tulsa will be presented to CIO Dellinger and the city IT department later this month.
-
-[![Codeacross drone](images/Codeacross-drone-e1424639463591-225x300.jpg)](http://coffeeandtequila.com/wp-content/uploads/2015/02/Codeacross-drone.jpg)
+<!-- 
+[![Codeacross drone](images/Codeacross-drone-e1424639463591-225x300.jpg)](http://coffeeandtequila.com/wp-content/uploads/2015/02/Codeacross-drone.jpg) -->
 
 CodeAcross 2015 volunteers spent most of their time at their keyboards coding away, but occasionally needed to stretch their legs. A mini drone was on hand to entertain the gang during these breaks. In all, about 50 people participated in CodeAcross 2015 here in Tulsa, including 15 University of Tulsa ACM students, plus out-of-towners from places as far away as Kansas and Jenks.
 

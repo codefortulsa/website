@@ -16,7 +16,7 @@ tags:
 coverImage: "code_across_america_banner_blue.png"
 ---
 
-The Tulsa Community Joins Together for Weekend  of Civic Innovation: Feb 22-23
+The Tulsa Community Joins Together for Weekend of Civic Innovation: Feb 22-23
 
 Co-produced by Code for Tulsa, Civic Ninjas and TU’s Student Chapter of the Association for Computing Machinery (ACM), the event will focus on taking government data and using it to enhance the community. This event is co-hosted by Code for America, Sunlight Foundation, and Open Knowledge Foundation -- one of 45 events happening around the globe this weekend as part of CodeAcross.  Sponsorship for this event is provided by Fab Lab Tulsa, and Tulsa Web Devs.
 
@@ -30,7 +30,7 @@ This event is part of CodeAcross -- an international weekend of locally held eve
 
 **WHEN:** 8:30am-9:30am at Fab Lab on February 22, 10am-9pm at TU on February 22 & 23
 
-**WHERE:** Fab Lab Tulsa. 710 S Lewis Ave.; Tulsa University Mayo Village Student Activities Center 
+**WHERE:** Fab Lab Tulsa. 710 S Lewis Ave.; Tulsa University Mayo Village Student Activities Center
 
 CodeAcross is organized by Code for America (CfA), the Sunlight Foundation, and the Open Knowledge Foundation and is sponsored by Esri and Microsoft. This is the third annual CodeAcross.
 
@@ -44,4 +44,4 @@ RSVP: [meetup.com](http://www.meetup.com/Code-for-Tulsa/events/152233562/)
 
 Full list of events: [codeforamerica.org](http://codeforamerica.org/codeacross)
 
-[![code_across_america_banner_blue](http://codefortulsa.files.wordpress.com/2014/02/code_across_america_banner_blue.png?w=300)](http://www.meetup.com/Code-for-Tulsa/events/152233562/)
+[![code_across_america_banner_blue](./images/code_across_america_banner_blue.png)](http://www.meetup.com/Code-for-Tulsa/events/152233562/)
