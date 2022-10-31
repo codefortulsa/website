@@ -11,7 +11,7 @@ tags:
   - "healthgeist"
   - "open-data-census"
   - "tu-acm"
-coverImage: "img_9039.jpg"
+# coverImage: "img_9039.jpg"
 ---
 
 Code for Tulsa, and the TU Student [ACM](http://orgs.utulsa.edu/acm/ "Student Chapter of the Association for Computing Machinery") organization worked together for a weekend of civic hacking at this year's [CodeAcross](http://codefortulsa.org/2014/02/19/code-across-2014-beyond-transparency/ "Code Across 2014: Beyond Transparency") event, hosted by [Code for America](http://codeforamerica.org/ "Code for America") (full list of hosts, sponsors, and producers, [here](http://codefortulsa.org/2014/02/19/code-across-2014-beyond-transparency/ "Code Across 2014: Beyond Transparency") and news coverage, [here](http://www.tulsaworld.com/homepagelatest/saturday-hackathon-encourages-programmers-to-devise-apps-for-tulsa/article_4b570e1c-9c11-11e3-9634-0017a43b2370.html)). The event spanned two days, two locations (FabLab Tulsa and the Mayo Village SAC at TU), and featured a presentation at the end of the weekend, for the student groups to show off the [projects](http://www.kjrh.com/news/local-news/tulsa-computer-experts-creating-new-civic-innovations-using-tulsas-open-government-data) that they worked on. It's an impressive list:
@@ -26,4 +26,4 @@ Non-programmers were also given an opportunity to contribute, and learn about op
 
 The biggest benefit was getting TU students exposed to the world of civic hacking, as well as development with web apps and the APIs that allow them to be built. Many of these students are freshman, and we hope they've caught the bug and will continue to be active in the coming years.
 
-[![Code for Tulsa + TU ACM](./images/img_9039.jpg)]
+<!-- [![Code for Tulsa + TU ACM](./images/img_9039.jpg)] -->

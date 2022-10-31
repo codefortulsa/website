@@ -15,7 +15,7 @@ tags:
 # coverImage: "what-are-you-working-on.jpg"
 ---
 
-![](./images/CodeAcross2015_Postcard-550x367.jpg)
+<!-- ![](./images/CodeAcross2015_Postcard-550x367.jpg) -->
 
 This weekend Code for Tulsa hosted one of 60 CodeAcross events (#codeacross) around the globe. At the Flyloft in Tulsa’s Brady Arts District, Code for Tulsa members worked on five tech initiatives for the community of Tulsa.
 
@@ -56,8 +56,8 @@ One tank of gas in a hybrid car translates to 8400 phones being charged over one
 It is even possible, depending on how the technology is used, for one hybrid car to keep one small business up and running for a while, so local grocers could remain open to the public during the immediate aftermath of a catastrophe.
 
 The Power Brigade was introduced in Red Hook Brooklyn last year to great response from that community, one of the most heavily damaged during Hurricane Sandy. This weekend the Brigade is developing software that can help locate hybrid cars and other sources in the wake of a disaster.
-
-![](http://image.slidesharecdn.com/thedigitaltransformationoftransportation-150117104346-conversion-gate01/95/the-digital-transformation-of-transportation-v-12-80-638.jpg)
+<!-- 
+![](http://image.slidesharecdn.com/thedigitaltransformationoftransportation-150117104346-conversion-gate01/95/the-digital-transformation-of-transportation-v-12-80-638.jpg) -->
 
 ## Open Data Census
 
