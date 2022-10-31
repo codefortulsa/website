@@ -9,7 +9,7 @@ tags:
   - "wiki-wednesday"
 ---
 
-\[caption id="attachment\_266" align="alignright" width="196"\][![Boston Avenue United Methodist Church, Downtown Tulsa](http://codefortulsa.files.wordpress.com/2013/05/bostonavenuemethodisttulsa.jpg?w=196)](http://codefortulsa.files.wordpress.com/2013/05/bostonavenuemethodisttulsa.jpg) Boston Avenue United Methodist Church, Downtown Tulsa\[/caption\]
+[![Boston Avenue United Methodist Church, Downtown Tulsa](./images/bostonavenuemethodisttulsa.jpg)] Boston Avenue United Methodist Church, Downtown Tulsa
 
 According to the [Pew Forum on Religion and Public Life](http://religions.pewforum.org/maps), 50% of Oklahomans attend religious services at least once a week, and another 25% attend once or twice a month or a few times a year.  So we behind-the-scenes elves at CodeForTulsa.org thought that churches and other places of worship would be an important Wiki Wednesday topic.  Don’t let the term “Wiki Wednesday” get you down – feel free to add to the [TulsaWiki](http://www.tulsawiki.org/) for this topic at any time during the week, and catch up with [previous topics](http://codefortulsa.org/tag/wiki-wednesday/) if you need to.  Next Wednesday, we’ll roll out a new topic!
 
@@ -28,4 +28,4 @@ I’m sure many of our readers have similar stories of their own churches and ot
 
 Wiki this now, _and_ plan to join us for Tulsa’s [National Day of Civic Hacking](https://ndochtulsa.eventbrite.com/ "NDOCH  registration") on Saturday, June 1.  Register today!
 
-Photo credit: **[Boston Avenue Methodist Church](http://www.flickr.com/photos/7585621@N02/4958362156/), by [Alexis.Balbontin](http://www.flickr.com/photos/7585621@N02/), [CC BY 2.0](http://creativecommons.org/licenses/by/2.0/deed.en)**
+Photo credit: [Boston Avenue Methodist Church](http://www.flickr.com/photos/7585621@N02/4958362156/), by [Alexis.Balbontin](http://www.flickr.com/photos/7585621@N02/), [CC BY 2.0](http://creativecommons.org/licenses/by/2.0/deed.en)

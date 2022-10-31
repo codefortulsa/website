@@ -26,4 +26,4 @@ Non-programmers were also given an opportunity to contribute, and learn about op
 
 The biggest benefit was getting TU students exposed to the world of civic hacking, as well as development with web apps and the APIs that allow them to be built. Many of these students are freshman, and we hope they've caught the bug and will continue to be active in the coming years.
 
-[![Code for Tulsa + TU ACM](http://codefortulsa.files.wordpress.com/2014/03/img_9039.jpg?w=605)](http://codefortulsa.files.wordpress.com/2014/03/img_9039.jpg)
+[![Code for Tulsa + TU ACM](./images/img_9039.jpg)]

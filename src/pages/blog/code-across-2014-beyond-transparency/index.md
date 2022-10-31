@@ -44,4 +44,4 @@ RSVP: [meetup.com](http://www.meetup.com/Code-for-Tulsa/events/152233562/)
 
 Full list of events: [codeforamerica.org](http://codeforamerica.org/codeacross)
 
-[![code_across_america_banner_blue](./images/code_across_america_banner_blue.png)](http://www.meetup.com/Code-for-Tulsa/events/152233562/)
+<!-- [![code_across_america_banner_blue](http://codefortulsa.files.wordpress.com/2014/02/code_across_america_banner_blue.png?w=300)](http://www.meetup.com/Code-for-Tulsa/events/152233562/) -->
