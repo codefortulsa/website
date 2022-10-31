@@ -157,7 +157,7 @@ End to End tests go in the `cypress/e2e` directory
 ## Maintainers / Contributors
 - Project Lead - [Erich Keil](https://github.com/zenlex)
 - Content Lead - [Carlos Moreno](https://github.com/chimchim237)
-- Development Lead - [Alec Helmturner](https://github.com/alecvision)
+- Development Lead - [Alec Helmturner](https://github.com/helmturner)
 - Front End Contributor - [Nicole Janeway Bills](https://github.com/NicoleJaneway)
 - Front End Contributor - [Matt Gardner](https://github.com/allthesignals)
 - Documentation Contributor - [Grace Fallon](https://github.com/angelofgrace) 
