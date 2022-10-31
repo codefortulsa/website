@@ -5,11 +5,11 @@ import Link from "next/link";
 export default function Nav() {
   return (
     <>
-      <div className="w-64 h-screen sm:relative bg-gray-900 shadow md:h-full flex-col justify-between hidden sm:flex">
+      <nav className="w-screen lg:w-64 bg-cft-black shadow flex-col justify-between">
         <div>
-          <div className="flex items-center my-6 cursor-pointer">
+          <div className="flex items-center justify-center my-6 cursor-pointer">
             <Link href={'/'}>
-              <Image src={sticker} alt="cft logo" />
+              <Image src={sticker} alt="cft logo" width={300} height={300} objectPosition="50% 50%;" />
             </Link>
           </div>
           <ul>
@@ -20,9 +20,11 @@ export default function Nav() {
                 </p>
               </li>
             </Link>
-            <li className="w-full font-extrabold text-cft-white hover:text-gray-500 cursor-pointer py-2 bg-cft-red">
-              <p className="text-sm text-center">join us</p>
-            </li>
+            <Link href={'/connections'}>
+              <li className="w-full font-extrabold text-cft-white hover:text-gray-500 cursor-pointer py-2 bg-cft-red">
+                <p className="text-sm text-center">join us</p>
+              </li>
+            </Link>
             <Link href={'/events'}>
               <li className="w-full font-extrabold text-cft-black hover:text-gray-500 cursor-pointer py-2 bg-cft-white">
                 <p className="text-sm text-center">
@@ -39,7 +41,7 @@ export default function Nav() {
             </Link>
           </ul>
         </div>
-      </div>
+      </nav>
     </>
   )
 }

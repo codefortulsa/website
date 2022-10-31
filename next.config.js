@@ -31,7 +31,9 @@ const nextConfigAsync = async () => {
   });
   const remarkGfm = (await import('remark-gfm')).default;
   const remarkFrontmatter = (await import('remark-frontmatter')).default;
+  const remarkMdxFrontmatter = (await import('remark-mdx-frontmatter')).default;
 
+  const recmaStaticProps = (await import('recma-nextjs-static-props')).default;
   const recmaStaticImages = (await import('recma-next-static-images')).default;
   const recmaStaticImagesConfig =
     /** @type {import('recma-next-static-images').Options} */ ({
@@ -45,11 +47,13 @@ const nextConfigAsync = async () => {
       remarkPlugins: [
         remarkGfm,
         remarkFrontmatter,
+        remarkMdxFrontmatter
         //   [remarkMorematter,  remarkMorematterConfig],
         //   [remarkValidateVFile, remarkValidateVFileConfig],
       ],
       rehypePlugins: [],
       recmaPlugins: [
+        recmaStaticProps,
         [recmaStaticImages, recmaStaticImagesConfig],
       ],
       providerImportSource: '@mdx-js/react',

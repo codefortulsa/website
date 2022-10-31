@@ -23,6 +23,8 @@ export type NextPageWithLayout<TProps = {}, TInitialProps = {}> = NextPage<
  * from the data-fetching method on that page (getStaticProps, getServerSideProps, etc.)
  */
 function MyApp({Component, pageProps}: AppPropsWithLayout) {
+  // For `.md` & `.mdx` files in the `pages` directory, frontmatter from the file becomes `pageProps`
+  console.log(pageProps);
   // If Component.getLayout is undefined, use the DefaultLayout.
   // The layout can be disabled by setting Componenet.getLayout to null
   const getLayout: NextPageWithLayout['getLayout'] =
