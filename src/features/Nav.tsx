@@ -1,15 +1,15 @@
-import sticker from "/public/asset/cff sticker design@2x.png"
+import sticker from "/public/asset/cff-sticker-design-2x.png"
 import Image from "next/image"
 import Link from "next/link";
 
-export default function Nav() {
+const Nav = () => {
   return (
     <>
       <nav className="w-screen lg:w-64 bg-cft-black shadow flex-col justify-between">
         <div>
           <div className="flex items-center justify-center my-6 cursor-pointer">
-            <Link href={'/'}>
-              <Image src={sticker} alt="cft logo" width={300} height={300} objectPosition="50% 50%;" />
+            <Link href={'/'} passHref={true}>
+              <Image src={sticker} alt="cft logo" width={300} height={300} objectPosition="50% 50%" />
             </Link>
           </div>
           <ul>
@@ -45,3 +45,5 @@ export default function Nav() {
     </>
   )
 }
+
+export default Nav;
