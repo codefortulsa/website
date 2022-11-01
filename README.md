@@ -73,7 +73,7 @@ The Code for Tulsa website aims to be a beacon for engagement in civic tech volu
  In the early stages of this redesign project, the requirements were simple: create a web blog that facilitates content contributions from non-technical volunteers. Because of this, the project was initially bootstrapped as a static Gatsby site.
 
  Soon after, discussions began about integrating other resources utilized by the organization, such as Twitter, Slack, Meetup, etc. It was agreed that a more flexible framework was desired to keep up with the dynamic demands of the organization and provide broader variety for volunteer engagement. The project was migrated to Next.Js in January 2022 and adapted for deployment on serverless platforms.
- 
+
  While the infrastructure now exists for more complex features, every effort should be made to implement them in as low resource/cost-effective a manner as possible by using static or incremental generation, external APIs, and client-side offloading wherever possible.
 
 ## Installation
@@ -110,7 +110,7 @@ yarn build
 yarn start
 OR
 yarn dev
-``` 
+```
 - In separate process:
 run headless in terminal:
 ```sh
@@ -157,15 +157,15 @@ End to End tests go in the `cypress/e2e` directory
 ## Maintainers / Contributors
 - Project Lead - [Erich Keil](https://github.com/zenlex)
 - Content Lead - [Carlos Moreno](https://github.com/chimchim237)
-- Development Lead - [Alec Helmturner](https://github.com/alecvision)
+- Development Lead - [Alec Helmturner](https://github.com/helmturner)
 - Front End Contributor - [Nicole Janeway Bills](https://github.com/NicoleJaneway)
 - Front End Contributor - [Matt Gardner](https://github.com/allthesignals)
-- Documentation Contributor - [Grace Fallon](https://github.com/angelofgrace) 
+- Documentation Contributor - [Grace Fallon](https://github.com/angelofgrace)
 - Additional Contributors:
 [Isaac Ahlfield](https://github.com/higherkey),
 
 ## Support
-Volunteer Contact for Website Development: 
+Volunteer Contact for Website Development:
 - Project Lead - [Erich Keil](mailto:erich@zenlex.dev) <!-- (Link to Email) -->
 
 Volunteer Contact for all other areas:
