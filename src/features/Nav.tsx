@@ -8,7 +8,7 @@ const Nav = () => {
       <nav className="w-screen lg:w-64 bg-cft-black shadow flex-col justify-between">
         <div>
           <div className="flex items-center justify-center my-6 cursor-pointer">
-            <Link href={'/'}>
+            <Link href={'/'} passHref={true}>
               <Image src={sticker} alt="cft logo" width={300} height={300} objectPosition="50% 50%" />
             </Link>
           </div>
