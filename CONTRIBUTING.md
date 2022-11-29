@@ -70,7 +70,7 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 - Tailwind CSS : [Documentation](https://tailwindcss.com/docs/installation)
-- Typescript __Optional__: [Documentation](https://www.typescriptlang.org/docs/) - [Plugin](https://www.gatsbyjs.com/plugins/gatsby-plugin-typescript) - [GraphQL Query Types](https://www.gatsbyjs.com/plugins/gatsby-plugin-graphql-codegen/)
+- Typescript __Optional__: [Documentation](https://www.typescriptlang.org/docs/) 
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -351,7 +351,7 @@ npm install -g yarn
 **Install dependencies**:
 
 ```bash
- yarn global add gatsby-cli && yarn install
+ yarn install
 ```
 
 **Start the development server:**
