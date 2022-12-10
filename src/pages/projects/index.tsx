@@ -26,7 +26,16 @@ const projects:ProjectCardProps[] =
         changes: ['changes1', 'changes2'],
         links: ['slack.com','github.com']
     },
-
+    {
+        title: 'this is title2',
+        status: 'finished2',
+        pm: 'John Doe2',
+        repo: 'link.com2',
+        img: 'https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image-300x225.png', 
+        description: 'this is description bla bla blalala',
+        changes: ['changes1', 'changes2'],
+        links: ['slack.com','github.com']
+    },
 ]
 
 
@@ -44,5 +53,5 @@ const ProjectPage: NextPageWithLayout = () => {
         </>
     )
 }
-
+ProjectPage.getLayout = page => <DefaultLayout>{page}</DefaultLayout>
 export default ProjectPage

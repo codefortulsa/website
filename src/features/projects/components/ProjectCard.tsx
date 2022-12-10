@@ -16,8 +16,10 @@ links: Array<string>,
 const  ProjectCard= ({title,status,pm, repo, img, description,changes, links}:ProjectCardProps) => {
 
   return (
-    <h1>title</h1>
-    
+  <>
+    <h1>{title}</h1>
+    <h3>{status}</h3>
+    </>
   )
 }
 
