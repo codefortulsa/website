@@ -1,6 +1,6 @@
 import Image, { ImageProps } from "next/future/image";
 /**
- * This relies on the recma-next-static-images plugin in `next.config.js`, since static images break next/image
+ * This relies on the @helmturner/recma-next-static-images plugin in `next.config.js`, since static images break next/image
  * @see https://github.com/vercel/next.js/discussions/19065#discussioncomment-2341463
  */
 const Img = (props: ImageProps) => {
@@ -11,7 +11,7 @@ const Img = (props: ImageProps) => {
       <Image {...restProps} alt={alt ?? title ?? ""} title={title ?? alt ?? ""} {...src} loading="eager">
         {children}
       </Image>
-    )  
+    )
   }
   return (
     <Image  {...restProps} alt={alt ?? ""} title={title ?? ""} src={src} loading="eager">
