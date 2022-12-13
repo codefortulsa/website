@@ -3,7 +3,7 @@ import { title } from "process"
 import DefaultLayout from "../../features/DefaultLayout"
 import ProjectCard, {ProjectCardProps} from "../../features/projects/components/ProjectCard"
 import { NextPageWithLayout } from "../_app"
-
+import {}
 // export type ProjectCardProps = {
 //     title: string,
 //     status: string,
@@ -17,25 +17,16 @@ import { NextPageWithLayout } from "../_app"
 const projects:ProjectCardProps[] =
 [
     {
-        title: 'this is title',
-        status: 'finished',
+        title: 'Title',
+        status: 'Finished',
         pm: 'John Doe',
         repo: 'link.com',
-        img: 'https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image-300x225.png', 
+        img: 'https://as1.ftcdn.net/v2/jpg/02/48/42/64/1000_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg', 
         description: 'this is description bla bla',
-        changes: ['changes1', 'changes2'],
+        changes: ['Commit 1 did this', 'changes2'],
         links: ['slack.com','github.com']
     },
-    {
-        title: 'this is title2',
-        status: 'finished2',
-        pm: 'John Doe2',
-        repo: 'link.com2',
-        img: 'https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image-300x225.png', 
-        description: 'this is description bla bla blalala',
-        changes: ['changes1', 'changes2'],
-        links: ['slack.com','github.com']
-    },
+    
 ]
 
 
@@ -44,11 +35,11 @@ const ProjectPage: NextPageWithLayout = () => {
         <>
         {
             projects.map(
-                (projectProps, index)=>{
+                (projectProps, index)=>(
                     <ProjectCard
                     {...projectProps}
                     key={index}/>
-                }
+                )
             )}
         </>
     )
