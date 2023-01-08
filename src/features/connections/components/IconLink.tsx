@@ -4,34 +4,29 @@ export type IconLinkProps = {
 	url: string,
 	icon: string,
 	label: string,
-	reverse?: boolean
 }
 
-const IconLink = ({ url, icon, label, reverse = false }: IconLinkProps) => {
+const IconLink = ({ url, icon, label }: IconLinkProps) => {
 
 	return (
-		<div className="flex flex-row bg-cft-black text-cft-white
-			sm:even:flex-row lg:even:flex-row-reverse  
-			  ">
-			<a
-				href={url}
-				target='blank'
-				className="items-center py-5 w-96
-				text-left pl-5 sm:pl-10
-				flex justify-start
+		<a
+			href={url}
+			target='blank'
+			className="bg-cft-black items-center py-5 w-96
+				text-left text-cft-white pl-5 sm:pl-10
+				flex justify-center
+				odd:flex-row
+				even:flex-row-reverse
+				lg:even:flex-row
+				lg:justify-start
 				hover:transition
-				hover:drop-shadow-[1.75px_1.75px_0.75px_rgba(171,48,57,1.0)] 
-				hover:text-cft-blue-400 
 				hover:scale-105"
-			>
-				<div className="w-32 h-32 ">
-					<Image src={icon} alt="slack logo" />
-				</div>
+		>
+			<Image src={icon} width="128" height="128" alt="slack logo" className="hover:drop-shadow-[1.75px_1.75px_0.75px_rgba(171,48,57,1.0)]" />
 
-				<div className="pl-5 sm:pl-10 text-2xl"
-				>{label}</div>
-			</a>
-		</div>
+			<div className="px-5 text-2xl hover:drop-shadow-[1.75px_1.75px_0.75px_rgba(171,48,57,1.0)]"
+			>{label}</div>
+		</a>
 	)
 }
 
