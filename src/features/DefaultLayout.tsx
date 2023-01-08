@@ -1,4 +1,3 @@
-import Link from "next/link"
 import Nav from "../features/Nav"
 
 type DefaultLayoutProps = {
@@ -11,7 +10,7 @@ const DefaultLayout = ({ children }: DefaultLayoutProps) => {
       <header className="col-span-1">
         <Nav />
       </header>
-      <main className="col-span-1 lg:col-span-3 pt-10 container px-20">
+      <main className="col-span-1 lg:col-span-3 pt-10 container">
         <section>
           {children}
         </section>
