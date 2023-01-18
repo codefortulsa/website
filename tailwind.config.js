@@ -38,6 +38,7 @@ module.exports = {
         'cft-black': '#121212',
         'cft-light-gray': '#BEBCBC',
         'cft-white': '#F9F9F9',
+        'cft-nav-gray': '#E6E6E6',
       },
     },
   },
