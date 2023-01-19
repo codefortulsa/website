@@ -5,7 +5,7 @@ import Link from "next/link";
 const Nav = () => {
   return (
     <>
-      <nav className="w-screen lg:w-64 bg-cft-black shadow flex-col justify-between">
+      <nav className="w-screen lg:w-64 bg-cft-nav-gray dark:bg-cft-black shadow flex-col justify-between">
         <div>
           <div className="flex items-center justify-center my-6 cursor-pointer">
             <Link href={'/'} passHref={true}>
