@@ -324,7 +324,7 @@ export default function MDXPage({ title, answer }) {
 `remark-gfm`:
 Used to enable GitHub Flavored Markdown features such as tables, strikethrough, and task lists.
 
-`recma-next-static-images`:
+`@helmturner/recma-next-static-images`:
 Next.js provides image optimzation out of the box, but it has the limitation that images which are not statically imported must specify a `width` and `height`. While it is possible to statically import images in MDX, it is not possible to statically import images in Markdown. This plugin circumvents this limitation by copying images used in markdown to a local cache and adding a static import statement in the javascript file which is generated from the markdown. Basically, using `next/image` with markdown should Just Work.
 
 ## Prerequisites:

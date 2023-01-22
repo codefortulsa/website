@@ -34,10 +34,10 @@ const nextConfigAsync = async () => {
   const remarkMdxFrontmatter = (await import('remark-mdx-frontmatter')).default;
 
   const recmaStaticProps = (await import('recma-nextjs-static-props')).default;
-  const recmaStaticImages = (await import('recma-next-static-images')).default;
+  const recmaStaticImages = (await import('@helmturner/recma-next-static-images')).default;
   const recmaStaticImagesConfig =
-    /** @type {import('recma-next-static-images').Options} */ ({
-      cacheDirectory: './__generated',
+    /** @type {import('@helmturner/recma-next-static-images').Options} */ ({
+      cacheDirectory: 'public/content',
     });
 
   const configureMDX = (await import('@next/mdx')).default;
