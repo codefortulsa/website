@@ -1,18 +1,13 @@
 import {GetStaticProps, NextPage} from 'next';
 import Link from 'next/link';
-import fs from 'node:fs';
-
+/**
+ *
+ * @param {string} rootPath - path to the blog directory
+ * @returns {string[]} - array of blog post paths
+ */
 export const getStaticProps: GetStaticProps = async () => {
-  const files = fs.readdirSync('src/pages/blog/', {withFileTypes: true});
-  const slugs = files
-    .filter(
-      file =>
-        file.isDirectory() &&
-        fs
-          .readdirSync(`src/pages/blog/${file.name}`, {withFileTypes: true})
-          .some(file => file.name === 'index.mdx')
-    )
-    .map(file => file.name);
+  const { default: getBlogSlugs } = await import('../../server/getBlogSlugs');
+  const slugs = getBlogSlugs('src/pages/blog');
   return {
     props: {
       slugs,
