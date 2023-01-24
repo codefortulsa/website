@@ -24,7 +24,7 @@ describe('Blogs', () => {
     cy.visit('http://localhost:3003/blog');
     cy.get('ul li a').each(link => {
       cy.visit(`http://localhost:3003/${link.attr('href')}`);
-      cy.wait(1000);
+      cy.wait(300);
       cy.get('img').each(($img, index) => {
         if (index === 0) return; // skip header image
         cy.wrap($img).as('img');
