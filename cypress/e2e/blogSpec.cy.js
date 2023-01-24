@@ -11,7 +11,7 @@ describe('Blogs', () => {
   });
 
   it.skip('index next and prev buttons work', () => {
-    cy.visit('http://localhost:3003/blog');
+    cy.visit('http://localhost:3000/blog');
     cy.get('.post-list-item a').first().click();
     cy.wait(300);
     cy.get('a').contains('next post', {matchCase: false}).click();
@@ -21,9 +21,9 @@ describe('Blogs', () => {
   });
 
   it('blog posts display images properly, if any', () => {
-    cy.visit('http://localhost:3003/blog');
+    cy.visit('http://localhost:3000/blog');
     cy.get('ul li a').each(link => {
-      cy.visit(`http://localhost:3003/${link.attr('href')}`);
+      cy.visit(`http://localhost:3000/${link.attr('href')}`);
       cy.wait(300);
       cy.get('img').each(($img, index) => {
         if (index === 0) return; // skip header image
