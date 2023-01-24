@@ -15,8 +15,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "types": ["node", "cypress"]
+    "types": ["node", "cypress"],
+    "noErrorTruncation": true,
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/server", "**/*.js", "**/*.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
   "exclude": ["node_modules", "**/*.bak"]
 }
