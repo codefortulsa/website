@@ -92,11 +92,29 @@ Install Yarn:
 npm install --global yarn
 ```
 ### Local Development
+
 Clone the repo and cd into the directory:
 ```sh
 git clone https://github.com/codefortulsa/website.git ./code-for-tulsa-website
 cd ./code-for-tulsa-website
 ```
+
+#### With Docker
+[Install Docker](https://docs.docker.com/get-docker/)
+
+Build the image:
+```sh
+docker build -t codefortulsa/website .
+```
+Set the PORT environment variable:
+```sh
+export PORT=3003
+```
+Run the container:
+```sh
+docker run -it -v $(pwd):/app -p $PORT:3000 codefortulsa/website
+```
+#### Without Docker
 Install packages & start the dev server:
 ```sh
 yarn install
