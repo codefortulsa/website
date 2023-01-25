@@ -1,17 +1,3 @@
-//const { default: remarkMorematter } = require('remark-morematter');
-//const { FrontmatterSchema } = require('./src/features/blog/ValidatorsAndTypes');
-
-///** @type {import('remark-morematter').Options} */
-//const remarkMorematterConfig = {
-//  failOnError: false,
-//  handlers: {
-//    yaml: {
-//      parser: yaml.parse,
-//      validator: FrontmatterSchema.parse,
-//    },
-//  },
-//}
-
 /**
  * ESModules can't be require'd, so we have to use dynamic import.
  * Fortunately, `next.config.js` can export a promise, so we wrap everything in an async function.
@@ -40,6 +26,11 @@ const nextConfigAsync = async () => {
       cacheDirectory: 'public/content',
     });
 
+  const remarkMdxFrontmatterConfig =
+    /** @type {import('remark-mdx-frontmatter').RemarkMdxFrontmatterOptions} */ ({
+      name: 'frontmatter'
+    });
+
   const configureMDX = (await import('@next/mdx')).default;
   const withMDX = configureMDX({
     extension: /\.mdx?$/,
@@ -47,9 +38,7 @@ const nextConfigAsync = async () => {
       remarkPlugins: [
         remarkGfm,
         remarkFrontmatter,
-        remarkMdxFrontmatter
-        //   [remarkMorematter,  remarkMorematterConfig],
-        //   [remarkValidateVFile, remarkValidateVFileConfig],
+        [remarkMdxFrontmatter, remarkMdxFrontmatterConfig]
       ],
       rehypePlugins: [],
       recmaPlugins: [
