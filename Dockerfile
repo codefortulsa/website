@@ -8,7 +8,7 @@ FROM node:16
 #    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME
 WORKDIR /app
 COPY ./package.json ./yarn.lock ./
-RUN npm install yarn && yarn install
+RUN rm -rf node_modules && npm install yarn && yarn install --frozen-lockfile
 COPY . .
 #ENV PATH=$PATH:/usr/local/bin
 #USER $USERNAME
