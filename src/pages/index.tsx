@@ -13,7 +13,7 @@ const HomePage: NextPageWithLayout = () => {
       </div>
       <br/>
       <p>
-        We’ve been building civic apps since 2011.  We’re programmers, graphic designers, PR/Marketing professionals, and all of us have a huge heart for making Tulsa a better place to live, work, and play.  We’ve worked with Tulsa Transit, the Tulsa Fire Department, the Tulsa Library, the local food bank, the regional planning authority, and FEMA.
+        We’ve been building civic apps since 2011. We’re programmers, graphic designers, PR/Marketing professionals, and all of us have a huge heart for making Tulsa a better place to live, work, and play.  We’ve worked with Tulsa Transit, the Tulsa Fire Department, the Tulsa Library, the local food bank, the regional planning authority, and FEMA.
       </p>
       <br/>
       <p>
