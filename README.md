@@ -106,10 +106,14 @@ Build the image:
 ```sh
 docker build -t codefortulsa/website .
 ```
-Run the container (note, if port 3000 is already in use, you can change the host port to something else, e.g. `3456:3000`)
+Run the app with composer
 ```sh
-docker run -it -v $(pwd):/app -p 3000:3000 codefortulsa/website
+docker-compose up
 ```
+- add `-d` flag to run container(s) in the background. 
+- if running in the background, you can start the logs up with `docker-compose logs -f`
+(the `-f` will keep the logs running, omit it for a one time print)
+
 #### Without Docker
 Install packages & start the dev server:
 ```sh
