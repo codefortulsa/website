@@ -102,11 +102,8 @@ cd ./code-for-tulsa-website
 #### With Docker
 [Install Docker](https://docs.docker.com/get-docker/)
 
-Build the image:
-```sh
-docker build -t codefortulsa/website .
-```
-Run the app with composer
+Run the app with docker compose 
+*(the first time you run this it will have to build images and install dependencies which could take a few minutes)*
 ```sh
 docker-compose up
 ```
