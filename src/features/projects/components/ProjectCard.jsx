@@ -1,3 +1,15 @@
+/* const project = {
+  title: 'Insert title here',
+  status: 'Insert status here',
+  projectManager: 'Insert manager name',
+  githubLink: 'Insert GitHub link',
+  heroImage: 'Insert hero image',
+  projectDescription: 'Insert project description',
+  projectChanges: 'Insert recent changes',
+  projectLinks: 'Insert project links',
+};
+*/
+
 const ProjectCard = props => {
   const {title, status} = props.project;
 
