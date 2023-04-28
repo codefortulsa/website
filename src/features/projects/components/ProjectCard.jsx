@@ -40,4 +40,4 @@ const ProjectCard = props => {
 };
 
 export default ProjectCard;
-//this is the actual card template you're working on
+//this is the actual reusable card template. You're building this to be reused across the site.
